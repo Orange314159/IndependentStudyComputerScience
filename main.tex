@@ -509,15 +509,15 @@ Adders in classical computing can be most simply given by:
   \lstick{0} &&&&&&& \targ{} & \rstick{Cout}
 \end{quantikz}
 
-\noindent By using these full adders, we can follow essentially the same steps as classical computing but in order to regain use of our auxilirary qubits we must undo many of the steps with inverse gates. 
+\noindent By using these full adders, we can follow essentially the same steps as classical computing but in order to regain use of our auxiliary qubits we must undo many of the steps with inverse gates. 
 
 \subsection{Universal Quantum Gates}
 
-The most simple way to define the universal quantum gate set is as the CNOT gate and all sigle qubit gates. While this is simple, it may prove useful to recognize CNOT, H, and T as a set that is also universal because H and T may aproximate all other single qubit gates. In addition, the CH or controlled H gate is universal. 
+The most simple way to define the universal quantum gate set is as the CNOT gate and all single qubit gates. While this is simple, it may prove useful to recognize CNOT, H, and T as a set that is also universal because H and T may approximate all other single qubit gates. In addition, the CH or controlled H gate is universal. 
 
 \subsection{Quantum Error Correction}
 
-Dechoerence is the process in which a qubit is `bumped', resulting in a change in phase (location on the bloch sphere). The ease in which a qubit can be bumped results in much more frequent bit flips in quantum computing when compared to clasical computing. In order to correct for this we will implement three qubits for every logical qubit. When a full qubit flip occurs, we can use some xors to correct for this. When a partial flip occurs (some phase shift) we can measure the xors, collapsing the error, then apply the correction xors depending on if we got a full bit flip from our measurement. This can be given by:\@
+Decoherence is the process in which a qubit is `bumped', resulting in a change in phase (location on the Bloch Sphere). The ease in which a qubit can be bumped results in much more frequent bit flips in quantum computing when compared to classical computing. In order to correct for this we will implement three qubits for every logical qubit. When a full qubit flip occurs, we can use some xors to correct for this. When a partial flip occurs (some phase shift) we can measure the xors, collapsing the error, then apply the correction xors depending on if we got a full bit flip from our measurement. This can be given by:\@
 
 \begin{quantikz}[wire types = {q,q,q,q,q,q,q,q}]
   \lstick{$\ket{q_0}$} & \ctrl{3}            &&&&& \gate{X} &&&&& \\
@@ -527,13 +527,13 @@ Dechoerence is the process in which a qubit is `bumped', resulting in a change i
   \lstick{$\ket{0}$}   & & & \targ{} & \targ{} & \ctrl{-3} & \ctrl[open]{-4} & \ctrl{-2} & \meter{} & \setwiretype{c} & \gate{\ket{0}}  & \setwiretype{q}
 \end{quantikz}
 
-A similar opperation can be done to remove phase error (apply the same principle to $\ket{-}$ and $\ket{+}$). By using both of these forms of error correction we are given a new definition of our logical $\psi$. We can show this by: $\ket{\psi} = \frac{\alpha}{2^{3/2}}(\ket{000} + \ket{111})(\ket{000} + \ket{111})(\ket{000} + \ket{111}) + \frac{\beta}{2^{3/2}}(\ket{000} - \ket{111})(\ket{000} - \ket{111})(\ket{000} - \ket{111})$. 
+A similar operation can be done to remove phase error (apply the same principle to $\ket{-}$ and $\ket{+}$). By using both of these forms of error correction we are given a new definition of our logical $\psi$. We can show this by: $\ket{\psi} = \frac{\alpha}{2^{3/2}}(\ket{000} + \ket{111})(\ket{000} + \ket{111})(\ket{000} + \ket{111}) + \frac{\beta}{2^{3/2}}(\ket{000} - \ket{111})(\ket{000} - \ket{111})(\ket{000} - \ket{111})$. 
 
 \section{Quantum Programming} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{IBM Quantum}
 
-IBM has a quantum computing editor that gives you access to draw circuits and run them with a simulator or one of their quantum machines. Current pricing for these machines excedes \$1.50 per second of use.  
+IBM has a quantum computing editor that gives you access to draw circuits and run them with a simulator or one of their quantum machines. The current pricing for these machines exceeds \$1.50 per second of use.  
 
 \subsection{Quantum Assembly Language}
 
@@ -541,37 +541,43 @@ Rather than drawing out your circuit with a mouse and clicking on gates to add t
 
 \subsection{Qiskit}
 
-Rather than using OpenQASM which appears C based in nature, you can use Qiskit which is more similar to Python's style of language. One of the benefits of using Qiskit is the ability to use Jupyter notebooks. In the use of Jupyter notebooks you can have better visuals and easier access to editing smaller sections of your entire code. Additionally, you can use any of the Python built-in packages in Qiskit.
+Rather than using OpenQASM which appears C-based in nature, you can use Qiskit which is more similar to Python's style of language. One of the benefits of using Qiskit is the ability to use Jupyter notebooks. In the use of Jupyter notebooks, you can have better visuals and easier access to editing smaller sections of your entire code. Additionally, you can use any of the Python built-in packages in Qiskit.
 
 \subsection{Other Quantum Programming Languages}
 
-Ther are many other programming languages for quantum computing supported by other companies.
+There are many other programming languages for quantum computing supported by other companies.
 
 \section{Entanglement and Quantum Protocols} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Measurements}
 
-In section four we covered quantum entanglement at a high level, looking at situation where the probabilities of certain states we unable to be factored. We can now look at states and consider them to be maximally entangled if measurement of one qubit fully determines the second qubit, and partially entangled if the measurement of one qubit partially determines the second.
+In Section four we covered quantum entanglement at a high level, looking at situation where the probabilities of certain states we unable to be factored. We can now look at states and consider them to be maximally entangled if measurement of one qubit fully determines the second qubit and partially entangled if the measurement of one qubit partially determines the second.
 
 \subsection{Bell Inequalities}
 
-Some text here
+Quantum information can travel at speeds faster than the speed of light. In fact, quantum information travels instantaneously. While this may seem to violate Einstein's principle that nothing can travel faster than the speed of light, there is no way in which anything can be encoded in these data and therefore this does not violate his principle. This was proved using the Bell Inequality test which is a complex test where a qubit is measured in multiple bases and then summed in such a way that we can conclude some new information. There are many other interpretations of how this could be possible, such as Einstein-Rosen Bridges or even the many-worlds interpretation, but our assumed Copenhagen interpretation is the most common and what we will assume to be true. 
 
 \subsection{Monogamy of Entanglement}
 
-Some text here
+This is a claim that states that no more than two qubits may be entangled at the same time. For example, q1 and q2 can be entangled, but by attempting to entangle q3 to either q1 or q2, q1 and q2 will cease being entangled. 
 
 \subsection{Superdense Coding}
 
-Some text here
+In quantum computing, you can send half the number of bits as in classical computing to convey the same information. This is done by encoding 00 as $\ket{\Phi^+}$, 01 as $\ket{\Psi^+}$, 10 as $\ket{\Phi^-}$, and 11 as $\ket{\Psi^-}$ and then sending the first bit (since the second bit is already at the target and is entangled with the first). To decode this message, the target must apply a CNOT gate to these qubits and then a $H\otimes I $ to return some two-qubit result. 
 
 \subsection{Quantum Teleportation}
 
-Some text here
+Quantum teleportation is the process of sending a single bit from one space to another. It can be implemented with the following circuit:
+
+\begin{quantikz}
+    \lstick{$\ket{\Phi^+_1}$} & &       & & & \gate{X} & \gate{Z} & \rstick{$\ket{\psi}$}\\ 
+    \lstick{$\ket{\Phi^+_0}$} & \targ{} & & \meter{} & \setwiretype{c} & \ctrl[vertical wire=c]{-1} && \\
+    \lstick{$\ket{\psi}$}     & \ctrl{-1} & \gate{H} & \meter{} & \setwiretype{c} && \ctrl[vertical wire=c]{-2} &
+\end{quantikz}
 
 \subsection{Quantum Key Distribution}
 
-Some text here
+Classical security such as RSA encryption can be broken by algorithms such as Shor's algorithm, making it far less secure. For this reason, we can use a quantum network to send qubits safely. This is done by the sender sending the qubits in a certain way and then revealing how they measured them. By revealing this information from both the sender and the receiver, they can discover if anyone is attempting to intercept their message, making it secure. 
 
 \section{Quantum Algorithms} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
