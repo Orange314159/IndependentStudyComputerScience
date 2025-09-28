@@ -1,6 +1,6 @@
-PWD c:\Users\mattr\OneDrive\Desktop\School\IndependentStudyComputerScience
+PWD c:\Users\mattr\OneDrive\Desktop\School\IndependentStudyComputerScience\Notes
 INPUT C:\Users\mattr\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\mattr\OneDrive\Desktop\School\IndependentStudyComputerScience\main.tex
+INPUT c:\Users\mattr\OneDrive\Desktop\School\IndependentStudyComputerScience\Notes\main.tex
 OUTPUT main.log
 INPUT C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
