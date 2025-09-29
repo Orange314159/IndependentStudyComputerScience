@@ -583,7 +583,22 @@ Classical security such as RSA encryption can be broken by algorithms such as Sh
 
 \subsection{Circuit vs Query Complexity}
 
-Some text here
+An important factor in determining if a quantum algorithm is efficient is to check the circuit complexity. One common gate to consider is the Toffoli gate. In its simplest form, the Toffoli gate be represent as such:
+  
+\begin{quantikz}[row sep={1cm,between origins}]
+    & \targ{} &  \\
+    & \control{} & \\
+    & \ctrl{-2} & 
+\end{quantikz} = \begin{quantikz}[row sep={1cm,between origins}]
+    & \gate{H} & \gate{P} && \gate{P^{\dagger}} && \gate{P} & \gate{H} & \\
+    & & \ctrl{-1} & \targ{} & \ctrl{-1} & \targ{} &&& \\
+    & & & \ctrl{-1} & & \ctrl{-1} & \ctrl{-2} &&
+\end{quantikz}
+
+\noindent This means that in simple terms, the Toffoli gate has a gate complexity of 7 (one or two qubit) gates.
+
+
+\noindent On a completely separate note, we can define some querry complexity for a program by the number of times that we must call some function in it. A common problem that quantum computing is used for is what is called the oracle problem. In this problem we have some oracle that can tell us if our input is correct. For a classical computer, the time complexity to find the correct input is $\mathcal{O}(n)$. With Grover's algorithm we can compute the same task with a quantum computer in $\mathcal{O}(\sqrt{n})$. This can be represent as the quantum equation $\ket{x}\ket{y}\longrightarrow\ket{x}\ket{y\otimes f(x)}$ where we let x be our input and y be our target or answer. We can now define the phase oracle as the oracle that only takes in an input where we let $\ket{y} = \ket{-}$. This phase oracle when applied gives us $\ket{x}\ket{-}\longrightarrow\ket{x}\ket{-}{(-1)}^{f(x)}$. 
 
 \subsection{Parity}
 
