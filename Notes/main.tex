@@ -602,56 +602,71 @@ An important factor in determining if a quantum algorithm is efficient is to che
 
 \subsection{Parity}
 
-Some text here
+If you have some bits $b_0$ and $b_1$ and you want to find the parity of them with a classical computer, you have to measure both bits and then compare them. Fortunately in quantum computing, you can do this in only one step. By querrying with a qubit that is equally split you can determine parity with only one operation. This circuit can be given by:
+
+\begin{quantikz}
+    \lstick{$\ket{-}$} & & \gate[2]{U_f} &&&& \rstick{$\ket{-}$} \\
+    \lstick{$\ket{0}$} & \gate{h} & & \gate{H} & \meter{} & \setwiretype{c} & \rstick{Parity}
+\end{quantikz}
+
+\noindent Mathamatically, this can be shown by the following:
+
+\[
+    \frac{1}{\sqrt{2}} [{-1}^{f(0)} \ket{0} + {-1}^{f(1)} \ket{1}]
+\]
+
+\noindent Which can be simply simplified to:
+
+\[
+    {(-1)}^{b_0} \frac{1}{\sqrt{2}} [\ket{0} + {(-1)}^{b_1 - b_2} \ket{1}]
+\]
+
+\noindent Simplifying even further tells us that if we get a negateive number then $b_0$ and $b_1$ are equal, and vice versa. Finally, this can be generalized to the case of n qubits where the time complexity is $\mathcal{O}(n/2)$. 
 
 \subsection{Constant vs Balanced Functions}
 
-Some text here
+We can let some constant function be such that it always returns a 0 or always returns a 1, regardless of the value of the input. A balanced function is one such that exactly 1/2 of the outputs are 1 and the other half are 0. We can clearly see that the time complexity of a n qubit input will take $\mathcal{O}(n^2)$ time. With a quantum computer, we can reduce this to an $\mathcal{O}(1)$ time. This is done by taking a similar approach as before by Hadamarding each qubit, then querrying the qubits. 
 
 \subsection{Secret Dot Product String}
 
-Some text here
+This method of using Hadamard gates to solve problems is very effective. It can be used again when one considers some function that performs a dot product betwee the input and some inside vector s. In a classical computer, it would requre n querries to determine s, but with a quantum computer it takes only one. 
 
 \subsection{Secret XOR Mask}
 
-Some text here
+We can also take this a step further in the case that we are looking for some s in a function f where $s \oplus x = s \oplus y$. Additionally, we can summarize that the quantum algorithms lead to significant speed up in terms of querr complexity. 
 
 \subsection{Brute-Force Searching}
 
-Some text here
+Now for the most significant discovery Grover's algorithm. We can interpret this function as a rotation of some vector across all dimensions that are perpendicular to the solution dimension by performing flips. This algorithm is not only impressive, but has been proven to be the most efficient possible method. 
 
 \subsection{Discrete Fourier Transform}
 
-Some text here
+Fourier transforms are used most frequently when considering the constituant parts of a wave. Creating a FT in classical computing takes $\mathcal{O}(nlogn)$ whereas a quantum computer takes $\mathcal{O}(1)$. Additionally, an inverse QFT can be designed by transposing the previously found matrix. 
 
 \subsection{Phase / Eigenvalue Estimation}
 
-Some text here
+To calculate eigenvalues you can create a quantum computer where you use a mixture of Hadamard gates and the use of an IQFT.\@
 
 \subsection{Period of Modular Exponentiation}
 
-Some text here
+Calculating some $n^k mod m$ can be very time consuming for a classical computer, but a quantum computer can speed up the querry time significantly.  
 
 \subsection{Factoring}
 
-Some text here
+Algorithms such as Shor's algorithm may be used to factor numbers very quickly.
 
 \section{Next Steps} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Careers in Quantum Computing}
 
-Some text here
+Many established companies recognize the growing importance of quantum computing which leads to their introduction of quantum computing jobs. Additionally start up companies looking to make breakthroughs in quantum also provide an avenue for students to study.
 
 \subsection{Technical Next Steps}
 
-Some text here
+It is suggested to read the book Quantum Computation and Quantum Information to further my understanding of quantum computing.
 
 \subsection{Questions}
 
-Some text here
-
-\subsection{Parting Words}
-
-Some text here
+Resources such as stackexchange can contain relevant information relating to quantum computing.
 
 \end{document}
