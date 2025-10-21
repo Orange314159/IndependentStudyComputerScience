@@ -1,6 +1,7 @@
 // #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <cmath>
 
 
 class Matrix {
@@ -68,11 +69,20 @@ class Matrix {
             }
 
             // now preforming Gauss-Jordan elimination
-            for (int i = 0; i < rows; i++) {
+            int maxRow = 0;
+            for (int i = 0; i < cols; i++) {
+                // to perforom elimination we want to diagonalize the 1s in the matrix, this will involve going through each col and attempting to make one of the rows in it a 1
+                
+                // look for the row with the greatest magnitude, we will then swap this row with the top 
+                for (int j = i; j < rows; j++) {
+                    
+                    if (std::abs(augmented.data[j][i]) > std::abs(augmented.data[maxRow][i])){
+                        maxRow = j;
+                    }
+
+                }
                 
             }
-
-
         }
 
         // opperation overloading is pretty great
