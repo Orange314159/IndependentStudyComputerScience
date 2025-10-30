@@ -130,6 +130,7 @@ Matrix Matrix::tensorProduct(const Matrix& other){
             output[row][col] = this.data[row/this.rows][col/this.cols] * otherMatrix.data[row%otherMatrix.rows][cols%otherMatrix.cols];
         }
     }
+    return output;
 }
 
 // opperation overloading is pretty great
