@@ -17,6 +17,7 @@ public:
 
     void setIdentity();
     Matrix inverse();
+    Matrix tensorProduct(const Matrix& other);
 
     // Operator overloads
     Matrix operator+(const Matrix& other);

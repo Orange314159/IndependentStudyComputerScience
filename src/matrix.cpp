@@ -123,11 +123,11 @@ Matrix Matrix::tensorProduct(const Matrix& other){
     // -- elements from the first matrix by the entirety of the second matrix
 
     Matrix otherMatrix = (Matrix) other;
-    Matrix output = new Matrix(this.rows * otherMatrix.rows, this.cols * otherMatrix.cols);
+    Matrix output((int)(this->rows * otherMatrix.rows), (int)(this->cols * otherMatrix.cols));
 
     for (int row = 0; row < output.rows; row++){
         for (int col = 0; col < output.cols; col++){
-            output[row][col] = this.data[row/this.rows][col/this.cols] * otherMatrix.data[row%otherMatrix.rows][cols%otherMatrix.cols];
+            output.data[row][col] = this->data[row/otherMatrix.rows][col/otherMatrix.cols] * otherMatrix.data[row%otherMatrix.rows][col%otherMatrix.cols];
         }
     }
     return output;

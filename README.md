@@ -26,7 +26,7 @@ The deliverables for the first few sections of the course should be students not
 
 ### Week 2
 
-- Add in quantum specific functionality for the matrix class
+- Add in quantum specific functionality for the matrix class (done)
 - Add in a gate class
 - Add in a qubit class
 - Find a method for graphing / visualization
