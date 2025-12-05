@@ -1,0 +1,77 @@
+%% Author - Matthew A Robson
+\documentclass{beamer}
+\usepackage{tikz}
+\usetheme{Berkeley}
+\usecolortheme{default}
+
+%% I want to fix a few color and theme things to match my school
+\definecolor{MySchoolBlue}{RGB}{0, 51, 102}
+\setbeamercolor{structure}{fg=MySchoolBlue, bg=MySchoolBlue}
+\setbeamercolor{item}{fg=MySchoolBlue}
+\setbeamercolor{enumerate item}{fg=MySchoolBlue}
+\setbeamercolor{itemize item}{fg=MySchoolBlue}
+
+
+\title[Quantum Computing] %% includes the title on every slides
+{High Speed Computing with Clustered and Quantum Computers}
+\subtitle{}
+\author[Robson, Matthew] %% includes my name on every slide
+{M.~A.~Robson\inst{1}}
+
+\institute[VFU] %% include the institution and further specifying information
+{
+  %\inst{1}%
+  LASA{CS} Department\\
+  Liberal Arts and Science Academy
+  \and
+  %\inst{2}%
+  Period 1\\
+  Independent Study Computer Science
+}
+
+\date[VLC 2021] %% include the date and even of the presentation
+{Fall Final, December 2025}
+
+\logo{\begin{tikzpicture}
+% \filldraw[color=red!50, fill=red!25, very thick](0,0) circle (0.5);
+% \node[draw,color=white] at (0,0) {LOGO HERE};
+\node (myimage) at (0,0) {\includegraphics[width=0.15\textwidth]{logo.png}};
+\end{tikzpicture}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+\begin{document}
+\frame{\titlepage}
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{What Is Quantum Computing?}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+\end{document}
