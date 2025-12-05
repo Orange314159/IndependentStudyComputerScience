@@ -116,6 +116,23 @@ Matrix Matrix::inverse() {
     return result;
 }
 
+Matrix Matrix::tensorProduct(const Matrix& other){
+    // input some y.1 by x.1 matrix and some y.2 by x.2 matrix
+    // output some y.1 * y.2 by x.1 * x.2 matrix
+    // this comes from the fact that the tensor product multiplies each of the 
+    // -- elements from the first matrix by the entirety of the second matrix
+
+    Matrix otherMatrix = (Matrix) other;
+    Matrix output((int)(this->rows * otherMatrix.rows), (int)(this->cols * otherMatrix.cols));
+
+    for (int row = 0; row < output.rows; row++){
+        for (int col = 0; col < output.cols; col++){
+            output.data[row][col] = this->data[row/otherMatrix.rows][col/otherMatrix.cols] * otherMatrix.data[row%otherMatrix.rows][col%otherMatrix.cols];
+        }
+    }
+    return output;
+}
+
 // opperation overloading is pretty great
 Matrix Matrix::operator+(const Matrix& other) {
     if (rows == 0 || cols == 0 || other.rows == 0 || other.cols == 0) {
