@@ -40,11 +40,11 @@
 \date[VLC 2021] %% include the date and even of the presentation
 {Fall Final, December 2025}
 
-\logo{\begin{tikzpicture}
-% \filldraw[color=red!50, fill=red!25, very thick](0,0) circle (0.5);
-% \node[draw,color=white] at (0,0) {LOGO HERE};
-\node (myImage) at (0,0) {\includegraphics[width=0.15\textwidth]{logo.png}};
-\end{tikzpicture}}
+\logo{
+\begin{tikzpicture}
+  \node (myImage) at (0,0) {\includegraphics[width=0.15\textwidth]{logo.png}};
+\end{tikzpicture}
+}
 
 %End of title page configuration block
 %------------------------------------------------------------
@@ -263,6 +263,96 @@ Now with the use of these vectors we can perform some algebraic operations such 
 
 
 
+%%%% Page 9 -- Basic Quantum Gates
+\begin{frame}
+\frametitle{Quantum Gates}
+
+\begin{block}{What are Quantum Gates?}
+  A quantum gate like a classical gate changes the state of a piece of information. Unlike many classical gates, a quantum gate is always reversible.
+\end{block}
+
+
+\begin{exampleblock}{Pauli-X Gate}
+\begin{center}
+  \begin{quantikz}
+    \lstick{$\ket{0}$} & \gate{X} & \rstick{$\ket{1}$}
+  \end{quantikz}
+\end{center}
+The Pauli-X gate acts in a similar fashion to that of a classical not gate.
+\end{exampleblock}
+
+
+\end{frame}
+
+
+%%%% Page 10 -- Quantum Axis
+\begin{frame}
+\frametitle{Quantum Measurement}
+
+\centering
+\begin{tikzpicture}
+
+  % Define radius
+  \def\r{3}
+
+
+  % Sphere
+  \draw (orig) circle (\r);
+  \draw[dashed] (orig) ellipse (\r{} and \r/3);
+
+  % X-axis (Red)
+  \draw[->, red] (orig) -- ++(-\r/5, -\r/3) node[below] {$\ket{+}$};
+  \draw[->, red] (orig) -- ++(\r/5, \r/3) node[above] {$\ket{-}$};
+
+  % Y-axis (Green)
+  \draw[->, green!60!black] (orig) -- ++(\r, 0) node[right] {$\ket{+i}$};
+  \draw[->, green!60!black] (orig) -- ++(-\r, 0) node[left] {$\ket{-i}$};
+
+  % Z-axis (Blue)
+  \draw[->, blue] (orig) -- ++(0, \r) node[above] {$\ket{0}$};
+  \draw[->, blue] (orig) -- ++(0, -\r) node[below] {$\ket{1}$};
+
+\end{tikzpicture}
+\end{frame}
+
+
+%%%% Page 11 -- Quantum Axis Conversion
+\begin{frame}
+% \begin{tikzpicture}
+
+%   % Define radius
+%   \def\r{1}
+
+
+%   % Sphere
+%   \draw (orig) circle (\r);
+%   \draw[dashed] (orig) ellipse (\r{} and \r/3);
+
+%   % X-axis (Red)
+%   \draw[->, red] (orig) -- ++(-\r/5, -\r/3) node[below] {$\ket{+}$};
+%   \draw[->, red] (orig) -- ++(\r/5, \r/3) node[above] {$\ket{-}$};
+
+%   % Y-axis (Green)
+%   \draw[->, green!60!black] (orig) -- ++(\r, 0) node[right] {$\ket{+i}$};
+%   \draw[->, green!60!black] (orig) -- ++(-\r, 0) node[left] {$\ket{-i}$};
+
+%   % Z-axis (Blue)
+%   \draw[->, blue] (orig) -- ++(0, \r) node[above] {$\ket{0}$};
+%   \draw[->, blue] (orig) -- ++(0, -\r) node[below] {$\ket{1}$};
+
+% \end{tikzpicture}
+
+It can be seen that the $\ket{+i}, \ket{-i}, \ket{-}, \ket{+}$ all fall along the equator of the bloch sphere. We can represent these points on the sphere using the following formulas:
+\begin{exampleblock}{Basis}
+  $\ket{+} = \frac{1}{\sqrt{2}}(\ket{0} + \ket{1})$\\
+  $\ket{-} = \frac{1}{\sqrt{2}}(\ket{0} - \ket{1})$\\
+  $\ket{+i} = \frac{1}{\sqrt{2}}(\ket{0} +i \ket{1})$\\
+  $\ket{-i} = \frac{1}{\sqrt{2}}(\ket{0} -i \ket{1})$
+\end{exampleblock}
+It is trivial to see how this concept can be extended to further to any arbirary basis. 
+
+
+\end{frame}
 
 
 \begin{frame}
