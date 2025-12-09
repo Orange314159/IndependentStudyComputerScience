@@ -125,7 +125,28 @@ While Turing-complete computers are powerful, they begin to break down at the me
 \begin{frame}
 \frametitle{A Single Qubit}
 
+A single qubit is given by $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$.
+\newline
+\newline
+$\alpha$ is given to be a number in the reals and $\beta$ is given to be a number in the complex space. Because of this we use a global phase to ensure $\alpha$ stays real.
+\newline
+\newline
+\begin{block}{Definition 2.0}
+  A qubit is best described by $\ket{\psi} = e^{i\gamma}(\alpha\ket{0} + \beta\ket{1}) | \alpha \epsilon 
+  \mathbb{R}, \beta \epsilon \mathbb{C}$
+\end{block}
 
+\end{frame}
+
+
+
+%%%% Page 6 -- Further Background on Qubits
+\begin{frame}
+\frametitle{Quantum Representation}
+
+\begin{center}
+  $\ket{\psi} = e^{i\gamma}(\alpha\ket{0} + \beta\ket{1}) | \alpha \epsilon \mathbb{R}, \beta \epsilon \mathbb{C}$
+\end{center}
 
 \centering %% Include the bloch sphere that I created for my notes
 \begin{tikzpicture}
@@ -148,13 +169,105 @@ While Turing-complete computers are powerful, they begin to break down at the me
   \draw[->] (orig) -- ++(0, \r) node[above] (x3) {$z$};
 
   % Angles
-  \pic [draw=gray, text=gray, ->, "$\phi$"] {angle = x1--orig--phi};
+  \pic [draw=gray, text=gray, ->, "$\varphi$"] {angle = x1--orig--phi};
   \pic [draw=gray, text=gray, <-, "$\theta$", angle eccentricity=1.4] {angle = a--orig--x3};
 
 \end{tikzpicture}
 
+$\alpha = \cos{\frac{\theta}{2}}$\\
+$\beta  = e^{i\varphi}\sin{\frac{\theta}{2}}$
+
 \end{frame}
 
+
+%%%% Page 7 -- Linear Algebra Crash Course
+
+\begin{frame}
+\frametitle{Linear Algebra Crash Course}
+
+In terms of our qubit we can define some vectors to represent our previous kets for 0 and 1:
+\[
+    \ket{0}=
+    \begin{pmatrix}
+    1 \\
+    0
+    \end{pmatrix}
+    ,
+    \ket{1}=
+    \begin{pmatrix}
+    0 \\
+    1
+    \end{pmatrix}
+\]
+Plugging this into our previous formulas we can see: 
+\[
+    \ket{\psi} = \alpha\begin{pmatrix} 1 \\ 0 \end{pmatrix} + \beta\begin{pmatrix} 0 \\ 1 \end{pmatrix} = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}
+\]
+We rewrite all of this work we have done in terms of vectors because it allows for our later use of matrices to act as the gates and for massively parallelized work.
+
+\end{frame}
+
+
+
+%%%% Page 8 -- Linear Algebra cont.
+\begin{frame}
+\frametitle{More Linear Algebra}
+
+Now with the use of these vectors we can perform some algebraic operations such as the tensor product allowing for us to combine gates and qubits.
+\[
+    \begin{pmatrix}
+        \alpha & \beta\\
+        \gamma & \delta
+    \end{pmatrix}
+    \otimes
+    \begin{pmatrix}
+        A & B\\
+        \Gamma & \Delta
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \alpha 
+        \begin{pmatrix}
+            A & B\\
+            \Gamma & \Delta
+        \end{pmatrix} 
+        & \beta
+        \begin{pmatrix}
+            A & B\\
+            \Gamma & \Delta
+        \end{pmatrix}
+        \\
+        \gamma
+            \begin{pmatrix}
+            A & B\\
+            \Gamma & \Delta
+        \end{pmatrix}
+        & \delta
+        \begin{pmatrix}
+            A & B\\
+            \Gamma & \Delta
+        \end{pmatrix}
+    \end{pmatrix}
+    =
+\]
+\[
+    \begin{pmatrix}
+        \alpha A      & \alpha B      & \beta A      & \beta   B      \\
+        \alpha \Gamma & \alpha \Delta & \beta \Gamma & \beta   \Delta \\
+        \gamma A      & \gamma B      & \delta A     & \delta  B      \\
+        \gamma \Gamma & \gamma \Delta & \delta \Gamma & \delta \Delta         
+    \end{pmatrix}
+\]
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+
+\end{frame}
 
 
 \end{document}

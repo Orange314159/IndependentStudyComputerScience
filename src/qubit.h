@@ -8,7 +8,7 @@
 
 class Qubit {
 public:
-    // sets of qubits are generally represetned as a vector
+    // sets of qubits are generally represented as a vector
     Matrix data;
     int numQubits;
     std::string name;

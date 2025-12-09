@@ -59,7 +59,7 @@ Matrix Matrix::inverse() {
     
     for (int i = 0; i < cols; i++) {
         int maxRow = i;
-        // to perforom elimination we want to diagonalize the 1s in the matrix, this will involve going through each col and attempting to make one of the rows in it a 1
+        // to perform elimination we want to diagonalize the 1s in the matrix, this will involve going through each col and attempting to make one of the rows in it a 1
         
         // look for the row with the greatest magnitude, we will then swap this row with the top 
         for (int j = i; j < rows; j++) {
@@ -133,16 +133,16 @@ Matrix Matrix::tensorProduct(const Matrix& other){
     return output;
 }
 
-// opperation overloading is pretty great
+// operation overloading is pretty great
 Matrix Matrix::operator+(const Matrix& other) {
     if (rows == 0 || cols == 0 || other.rows == 0 || other.cols == 0) {
         throw std::invalid_argument("Adding a zero dimension matrix is not allowed.");
     }
-    // two matricies can only be added if they have the same dimensions
+    // two matrices can only be added if they have the same dimensions
     if (rows != other.rows || cols != other.cols) {
         throw std::invalid_argument("Matrices must have the same dimensions for addition.");
     }
-    // new matrix used to hold the reuslt of this opperations
+    // new matrix used to hold the result of this operations
     Matrix result(rows, cols);
     // matrix addition in performed by adding corresponding elements
     for (int i = 0; i < rows; i++) {
@@ -153,16 +153,16 @@ Matrix Matrix::operator+(const Matrix& other) {
     return result;
 }
     
-// subtraction follow the same process as addition, but just subracting corresponding elements instead of adding
+// subtraction follow the same process as addition, but just subtracting corresponding elements instead of adding
 Matrix Matrix::operator-(const Matrix& other) {
     if (rows == 0 || cols == 0 || other.rows == 0 || other.cols == 0) {
         throw std::invalid_argument("Subtracting a zero dimension matrix is not allowed.");
     }
-    // two matricies can only be subtracted if they have the same dimensions
+    // two matrices can only be subtracted if they have the same dimensions
     if (rows != other.rows || cols != other.cols) {
         throw std::invalid_argument("Matrices must have the same dimensions for subtraction.");
     }
-    // new matrix used to hold the reuslt of this opperations
+    // new matrix used to hold the result of this operations
     Matrix result(rows, cols);
     // matrix subtraction in performed by subtracting corresponding elements
     for (int i = 0; i < rows; i++) {
@@ -175,11 +175,11 @@ Matrix Matrix::operator-(const Matrix& other) {
 
 // multiplication is a bit more complex
 Matrix Matrix::operator*(const Matrix& other) {
-    // two matricies can only be multiplied if the number of columns in the first matrix equals the number of rows in the second matrix
+    // two matrices can only be multiplied if the number of columns in the first matrix equals the number of rows in the second matrix
     if (cols != other.rows) {
         throw std::invalid_argument("Number of columns of first matrix must equal number of rows of second matrix for multiplication.");
     }
-    // new matrix used to hold the reuslt of this opperations
+    // new matrix used to hold the result of this operations
     Matrix result(rows, other.cols);
     // matrix multiplication is performed by taking the dot product of rows and columns (gotta love some good O(n^3))
     for (int i = 0; i < rows; i++) {
