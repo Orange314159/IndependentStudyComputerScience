@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.8)  8 DEC 2025 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.12.8)  14 DEC 2025 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -956,13 +956,57 @@ Package pdftex.def Info: logo.png  used on input line 262.
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 270.
+Package pdftex.def Info: logo.png  used on input line 285.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 270.
+Package pdftex.def Info: logo.png  used on input line 285.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
  [9
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 316.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 316.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [10
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 333.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 333.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [11
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 357.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 357.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [12
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 362.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 362.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [13
 
 ]
 \tf@nav=\write6
@@ -983,18 +1027,18 @@ Package rerunfilecheck Info: File `fallFinal.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30134 strings out of 474222
- 616219 string characters out of 5748733
- 1944975 words of memory out of 5000000
- 51745 multiletter control sequences out of 15000+600000
+ 30500 strings out of 474222
+ 624568 string characters out of 5748733
+ 1972975 words of memory out of 5000000
+ 52103 multiletter control sequences out of 15000+600000
  565419 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,23n,123p,2034b,1215s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on fallFinal.pdf (9 pages, 129907 bytes).
+ 128i,23n,123p,2034b,1565s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on fallFinal.pdf (13 pages, 149234 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 27 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -47,10 +47,23 @@
         "typeinfo": "cpp"
     },
     "cSpell.words": [
+        "CNOT",
+        "Entanglion",
+        "Hadamard",
+        "Hadamarding",
+        "IQFT",
         "kets",
         "LASACS",
         "NAND",
+        "QASM",
+        "Qiskit",
         "qubit",
-        "Vaknin"
+        "Qubits",
+        "Rosen",
+        "Shor's",
+        "stackexchange",
+        "Toffoli",
+        "Vaknin",
+        "xors"
     ]
 }

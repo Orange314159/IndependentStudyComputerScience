@@ -318,29 +318,7 @@ The Pauli-X gate acts in a similar fashion to that of a classical not gate.
 
 %%%% Page 11 -- Quantum Axis Conversion
 \begin{frame}
-% \begin{tikzpicture}
-
-%   % Define radius
-%   \def\r{1}
-
-
-%   % Sphere
-%   \draw (orig) circle (\r);
-%   \draw[dashed] (orig) ellipse (\r{} and \r/3);
-
-%   % X-axis (Red)
-%   \draw[->, red] (orig) -- ++(-\r/5, -\r/3) node[below] {$\ket{+}$};
-%   \draw[->, red] (orig) -- ++(\r/5, \r/3) node[above] {$\ket{-}$};
-
-%   % Y-axis (Green)
-%   \draw[->, green!60!black] (orig) -- ++(\r, 0) node[right] {$\ket{+i}$};
-%   \draw[->, green!60!black] (orig) -- ++(-\r, 0) node[left] {$\ket{-i}$};
-
-%   % Z-axis (Blue)
-%   \draw[->, blue] (orig) -- ++(0, \r) node[above] {$\ket{0}$};
-%   \draw[->, blue] (orig) -- ++(0, -\r) node[below] {$\ket{1}$};
-
-% \end{tikzpicture}
+\frametitle{Change of Basis}
 
 It can be seen that the $\ket{+i}, \ket{-i}, \ket{-}, \ket{+}$ all fall along the equator of the bloch sphere. We can represent these points on the sphere using the following formulas:
 \begin{exampleblock}{Basis}
@@ -349,7 +327,31 @@ It can be seen that the $\ket{+i}, \ket{-i}, \ket{-}, \ket{+}$ all fall along th
   $\ket{+i} = \frac{1}{\sqrt{2}}(\ket{0} +i \ket{1})$\\
   $\ket{-i} = \frac{1}{\sqrt{2}}(\ket{0} -i \ket{1})$
 \end{exampleblock}
-It is trivial to see how this concept can be extended to further to any arbirary basis. 
+It is trivial to see how this concept can be extended to further to any arbitrary basis. 
+
+
+\end{frame}
+
+
+%%%% Page 12 -- 
+
+\begin{frame}
+\frametitle{More Quantum Gates}
+
+As we saw before, we can turn a $\ket{0}$ into a $\ket{1}$ using the Pauli X gate.\\
+\begin{quantikz} 
+  \lstick{$\ket{0}$} & \gate{X} & \rstick{$\ket{1}$} 
+\end{quantikz}\\
+Following this idea we should be able to perform the same action on both other axis that we saw in the last slide:
+
+\begin{exampleblock}{Inversion Gates}
+  \centering
+  \begin{quantikz} 
+    \lstick{$\ket{0}$} & \gate{X} & \rstick{$\ket{1}$} \\
+    \lstick{$\ket{+i}$} & \gate{Y} & \rstick{$\ket{-i}$} \\
+    \lstick{$\ket{+}$} & \gate{Z} & \rstick{$\ket{-}$}
+  \end{quantikz}
+\end{exampleblock}
 
 
 \end{frame}

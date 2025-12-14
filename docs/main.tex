@@ -372,7 +372,7 @@ Importantly, we can write multiple gates applied in succession as the tensor pro
         \gamma \Gamma & \gamma \Delta & \delta \Gamma & \delta \Delta         
     \end{pmatrix}
 \]
-While single qubit gates are significant, in order to form a universal gate set we require two qubit gates. For example: $CNOT\ket{a_0a_1}$ which applies an inverse to $a_1$ if $a_1 = 1$. Thive give us the following matrix to represent $CNOT_{10}$:
+While single qubit gates are significant, in order to form a universal gate set we require two qubit gates. For example: $CNOT\ket{a_0a_1}$ which applies an inverse to $a_1$ if $a_1 = 1$. This give us the following matrix to represent $CNOT_{10}$:
 \[
     \begin{pmatrix}
         1 & 0 & 0 & 0 \\
@@ -598,11 +598,11 @@ An important factor in determining if a quantum algorithm is efficient is to che
 \noindent This means that in simple terms, the Toffoli gate has a gate complexity of 7 (one or two qubit) gates.
 
 
-\noindent On a completely separate note, we can define some querry complexity for a program by the number of times that we must call some function in it. A common problem that quantum computing is used for is what is called the oracle problem. In this problem we have some oracle that can tell us if our input is correct. For a classical computer, the time complexity to find the correct input is $\mathcal{O}(n)$. With Grover's algorithm we can compute the same task with a quantum computer in $\mathcal{O}(\sqrt{n})$. This can be represent as the quantum equation $\ket{x}\ket{y}\longrightarrow\ket{x}\ket{y\otimes f(x)}$ where we let x be our input and y be our target or answer. We can now define the phase oracle as the oracle that only takes in an input where we let $\ket{y} = \ket{-}$. This phase oracle when applied gives us $\ket{x}\ket{-}\longrightarrow\ket{x}\ket{-}{(-1)}^{f(x)}$. 
+\noindent On a completely separate note, we can define some query complexity for a program by the number of times that we must call some function in it. A common problem that quantum computing is used for is what is called the oracle problem. In this problem we have some oracle that can tell us if our input is correct. For a classical computer, the time complexity to find the correct input is $\mathcal{O}(n)$. With Grover's algorithm we can compute the same task with a quantum computer in $\mathcal{O}(\sqrt{n})$. This can be represent as the quantum equation $\ket{x}\ket{y}\longrightarrow\ket{x}\ket{y\otimes f(x)}$ where we let x be our input and y be our target or answer. We can now define the phase oracle as the oracle that only takes in an input where we let $\ket{y} = \ket{-}$. This phase oracle when applied gives us $\ket{x}\ket{-}\longrightarrow\ket{x}\ket{-}{(-1)}^{f(x)}$. 
 
 \subsection{Parity}
 
-If you have some bits $b_0$ and $b_1$ and you want to find the parity of them with a classical computer, you have to measure both bits and then compare them. Fortunately in quantum computing, you can do this in only one step. By querrying with a qubit that is equally split you can determine parity with only one operation. This circuit can be given by:
+If you have some bits $b_0$ and $b_1$ and you want to find the parity of them with a classical computer, you have to measure both bits and then compare them. Fortunately in quantum computing, you can do this in only one step. By querying with a qubit that is equally split you can determine parity with only one operation. This circuit can be given by:
 
 \begin{quantikz}
     \lstick{$\ket{-}$} & & \gate[2]{U_f} &&&& \rstick{$\ket{-}$} \\
@@ -621,19 +621,19 @@ If you have some bits $b_0$ and $b_1$ and you want to find the parity of them wi
     {(-1)}^{b_0} \frac{1}{\sqrt{2}} [\ket{0} + {(-1)}^{b_1 - b_2} \ket{1}]
 \]
 
-\noindent Simplifying even further tells us that if we get a negateive number then $b_0$ and $b_1$ are equal, and vice versa. Finally, this can be generalized to the case of n qubits where the time complexity is $\mathcal{O}(n/2)$. 
+\noindent Simplifying even further tells us that if we get a negative number then $b_0$ and $b_1$ are equal, and vice versa. Finally, this can be generalized to the case of n qubits where the time complexity is $\mathcal{O}(n/2)$. 
 
 \subsection{Constant vs Balanced Functions}
 
-We can let some constant function be such that it always returns a 0 or always returns a 1, regardless of the value of the input. A balanced function is one such that exactly 1/2 of the outputs are 1 and the other half are 0. We can clearly see that the time complexity of a n qubit input will take $\mathcal{O}(n^2)$ time. With a quantum computer, we can reduce this to an $\mathcal{O}(1)$ time. This is done by taking a similar approach as before by Hadamarding each qubit, then querrying the qubits. 
+We can let some constant function be such that it always returns a 0 or always returns a 1, regardless of the value of the input. A balanced function is one such that exactly 1/2 of the outputs are 1 and the other half are 0. We can clearly see that the time complexity of a n qubit input will take $\mathcal{O}(n^2)$ time. With a quantum computer, we can reduce this to an $\mathcal{O}(1)$ time. This is done by taking a similar approach as before by Hadamarding each qubit, then querying the qubits. 
 
 \subsection{Secret Dot Product String}
 
-This method of using Hadamard gates to solve problems is very effective. It can be used again when one considers some function that performs a dot product betwee the input and some inside vector s. In a classical computer, it would requre n querries to determine s, but with a quantum computer it takes only one. 
+This method of using Hadamard gates to solve problems is very effective. It can be used again when one considers some function that performs a dot product between the input and some inside vector s. In a classical computer, it would require n queries to determine s, but with a quantum computer it takes only one. 
 
 \subsection{Secret XOR Mask}
 
-We can also take this a step further in the case that we are looking for some s in a function f where $s \oplus x = s \oplus y$. Additionally, we can summarize that the quantum algorithms lead to significant speed up in terms of querr complexity. 
+We can also take this a step further in the case that we are looking for some s in a function f where $s \oplus x = s \oplus y$. Additionally, we can summarize that the quantum algorithms lead to significant speed up in terms of query complexity. 
 
 \subsection{Brute-Force Searching}
 
@@ -641,7 +641,7 @@ Now for the most significant discovery Grover's algorithm. We can interpret this
 
 \subsection{Discrete Fourier Transform}
 
-Fourier transforms are used most frequently when considering the constituant parts of a wave. Creating a FT in classical computing takes $\mathcal{O}(nlogn)$ whereas a quantum computer takes $\mathcal{O}(1)$. Additionally, an inverse QFT can be designed by transposing the previously found matrix. 
+Fourier transforms are used most frequently when considering the constituent parts of a wave. Creating a FT in classical computing takes $\mathcal{O}(nlogn)$ whereas a quantum computer takes $\mathcal{O}(1)$. Additionally, an inverse QFT can be designed by transposing the previously found matrix. 
 
 \subsection{Phase / Eigenvalue Estimation}
 
@@ -649,7 +649,7 @@ To calculate eigenvalues you can create a quantum computer where you use a mixtu
 
 \subsection{Period of Modular Exponentiation}
 
-Calculating some $n^k mod m$ can be very time consuming for a classical computer, but a quantum computer can speed up the querry time significantly.  
+Calculating some $n^k \mod m$ can be very time consuming for a classical computer, but a quantum computer can speed up the query time significantly.  
 
 \subsection{Factoring}
 
