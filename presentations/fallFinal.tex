@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{physics}
 \usepackage{graphicx}
+\usepackage{circuitikz}
 \usetikzlibrary{positioning, angles, quotes}
 
 \usetheme{Berkeley}
@@ -65,6 +66,8 @@
 %%%% Page 1 -- Title Page
 \frame{\titlepage}
 
+
+
 %%%% Page 2 -- Introduction 
 \begin{frame}
 \frametitle{What Is Quantum Computing?}
@@ -84,6 +87,8 @@ NAND, NOR, AND, OR, XOR $\rightarrow$ Complex structures such as ALUs and data s
 \end{quantikz}
 
 \end{frame}
+
+
 
 %%%% Page 3 -- Time Complexity and Circuit Complexity
 \begin{frame}
@@ -105,8 +110,9 @@ Additionally, we can classify these further into P, NP, NP-complete, etc.
 
 \end{frame}
 
-%%%% Page 4 -- Final Classical Computing 
 
+
+%%%% Page 4 -- Final Classical Computing 
 \begin{frame}
 \frametitle{Turing Completeness}
 
@@ -120,8 +126,9 @@ While Turing-complete computers are powerful, they begin to break down at the me
 
 \end{frame}
 
-%%%% Page 5 -- Introduction to Quantum Computers and Qubits
 
+
+%%%% Page 5 -- Introduction to Quantum Computers and Qubits
 \begin{frame}
 \frametitle{A Single Qubit}
 
@@ -180,8 +187,8 @@ $\beta  = e^{i\varphi}\sin{\frac{\theta}{2}}$
 \end{frame}
 
 
-%%%% Page 7 -- Linear Algebra Crash Course
 
+%%%% Page 7 -- Linear Algebra Crash Course
 \begin{frame}
 \frametitle{Linear Algebra Crash Course}
 
@@ -285,6 +292,7 @@ The Pauli-X gate acts in a similar fashion to that of a classical not gate.
 \end{frame}
 
 
+
 %%%% Page 10 -- Quantum Axis
 \begin{frame}
 \frametitle{Quantum Measurement}
@@ -316,6 +324,7 @@ The Pauli-X gate acts in a similar fashion to that of a classical not gate.
 \end{frame}
 
 
+
 %%%% Page 11 -- Quantum Axis Conversion
 \begin{frame}
 \frametitle{Change of Basis}
@@ -333,8 +342,8 @@ It is trivial to see how this concept can be extended to further to any arbitrar
 \end{frame}
 
 
-%%%% Page 12 -- 
 
+%%%% Page 12 -- More Pauli Gates
 \begin{frame}
 \frametitle{More Quantum Gates}
 
@@ -353,6 +362,55 @@ Following this idea we should be able to perform the same action on both other a
   \end{quantikz}
 \end{exampleblock}
 
+\end{frame}
+
+
+%%%% Page 13 -- Multi qubit gates
+\begin{frame}
+\frametitle{Issue With Multi-Qubit Quantum Gates}
+
+In order to preform actual logic it is important to have qubits that care about multiple qubits in input. The issue is the fact that we must follow the reversibility law.
+
+\begin{block}{Fundamental Law of Quantum Gates}
+  Any gate in a quantum computer must be reversible with some other gate.\ ie. Given some output and what the gate does you must always be able to perfectly predict what the input is.
+\end{block}
+
+\centering
+
+\begin{circuitikz}
+\draw(0,0)
+node[label=left:$x_0$] {}
+to[short, o-]
+(2,0)
+node[or port, anchor=in 1] (carly) {}
+(0,52 |- carly.in 2)
+node[label=left:$y_0$] {}
+to[short, o-]
+(carly.in 2)
+(carly.out)
+to[short, -o]
+++ (1,0)
+node[label=right:$s_0$] {}
+;
+\end{circuitikz}
+
+\end{frame}
+
+
+
+
+%%%% Page 14 -- Multi Qubit gates cont.
+\begin{frame}
+\frametitle{Multi-Qubit Gates Solved}
+
+\[
+    \begin{pmatrix}
+        1 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 \\
+        0 & 0 & 1 & 0 \\
+        0 & 1 & 0 & 0 
+    \end{pmatrix}
+\]
 
 \end{frame}
 
