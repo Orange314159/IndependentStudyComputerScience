@@ -55,6 +55,7 @@
         "kets",
         "LASA",
         "LASACS",
+        "mult",
         "NAND",
         "QASM",
         "Qiskit",
