@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765845131.68478 "/home/matt/Desktop/CodeProjects/IndependentStudyComputerScience/presentations/fallFinal.tex" "fallFinal.pdf" "fallFinal" 1765845132.85918 0
+["pdflatex"] 1765853793.43049 "/home/matt/Desktop/CodeProjects/IndependentStudyComputerScience/presentations/fallFinal.tex" "fallFinal.pdf" "fallFinal" 1765853794.98762 0
   "/etc/texmf/web2c/texmf.cnf" 1765246909.10687 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/matt/Desktop/CodeProjects/IndependentStudyComputerScience/presentations/fallFinal.tex" 1765845131.53145 12271 dc495e0a9af6244195cdf7f2cc76e33a ""
+  "/home/matt/Desktop/CodeProjects/IndependentStudyComputerScience/presentations/fallFinal.tex" 1765853793.27507 15799 a0d7197bba9036cd239a37c116865349 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcss1095.tfm" 1136768653 1536 f0fa079cdc83a6ffeda21e42352cf1ea ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -276,10 +276,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765247265.9764 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765247281 8214401 7b22a797d7e3517c449f2e9da220d635 ""
-  "fallFinal.aux" 1765845132.80402 2496 4523eb6e5bd813815247b99136e2ddf8 "pdflatex"
-  "fallFinal.nav" 1765845132.80528 1667 223530e0d280496bcaab89de82b2e7ab "pdflatex"
-  "fallFinal.out" 1765845132.21996 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "fallFinal.tex" 1765845131.53145 12271 dc495e0a9af6244195cdf7f2cc76e33a ""
+  "Grovers_algorithm_geometry.png" 1765848478.57029 39238 bfe6ec594a6c61fc4274783f948e24aa ""
+  "RunningTime.png" 1765848661.02413 39313 e4ccf5ecba495ce65ad94e34b403b204 ""
+  "fallFinal.aux" 1765853794.93093 3141 27fa09ff655ef683deefa5afb1333bd2 "pdflatex"
+  "fallFinal.nav" 1765853794.93291 2132 9ecbcfc9f7de68c052dc9846a033acac "pdflatex"
+  "fallFinal.out" 1765853793.97611 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "fallFinal.tex" 1765853793.27507 15799 a0d7197bba9036cd239a37c116865349 ""
+  "grover.png" 1765853781.26193 23578 427f4b249506d4e81fa5f253efd5a414 ""
   "images.jpeg" 1765844103.30946 15145 1783cc23318a3d9346c929d147b78e96 ""
   "logo.png" 1765246653.62339 19451 4f32853c66cd4d30c3cead89b6d4e2a5 ""
   (generated)

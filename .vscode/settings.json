@@ -53,6 +53,7 @@
         "Hadamarding",
         "IQFT",
         "kets",
+        "LASA",
         "LASACS",
         "NAND",
         "QASM",
