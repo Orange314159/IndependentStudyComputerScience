@@ -403,17 +403,94 @@ node[label=right:$s_0$] {}
 \begin{frame}
 \frametitle{Multi-Qubit Gates Solved}
 
+In order to have a reversible gate we could construct a gate that follows this type of format.
+
 \[
     \begin{pmatrix}
-        1 & 0 & 0 & 0 \\
-        0 & 0 & 0 & 1 \\
-        0 & 0 & 1 & 0 \\
-        0 & 1 & 0 & 0 
+        c_0 \\
+        c_1 \\
+        c_2 \\
+        c_3
     \end{pmatrix}
+    \xrightarrow{}
+    \begin{pmatrix}
+        c_0 \\
+        c_1 \\
+        c_3 \\
+        c_2
+    \end{pmatrix}
+\]
+
+We can simply see that this can be constructed as a matrix below.
+\[
+  \begin{pmatrix}
+      1 & 0 & 0 & 0 \\
+      0 & 1 & 0 & 0 \\
+      0 & 0 & 0 & 1 \\
+      0 & 0 & 1 & 0 
+  \end{pmatrix}
+  \begin{pmatrix}
+      c_0 \\
+      c_1 \\
+      c_2 \\
+      c_3
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+      c_0 \\
+      0 \\
+      0 \\
+      0
+  \end{pmatrix}
+  +
+  \begin{pmatrix}
+      0 \\
+      c_1 \\
+      0 \\
+      0
+  \end{pmatrix}
+  +
+  \begin{pmatrix}
+      0 \\
+      0 \\
+      0 \\
+      c_2
+  \end{pmatrix}
+  +
+  \begin{pmatrix}
+      0 \\
+      0 \\
+      c_3 \\
+      0
+  \end{pmatrix}
 \]
 
 \end{frame}
 
+
+
+%%%% Page 15 -- Why you should care
+\begin{frame}
+\frametitle{The Importance of Quantum Computers}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth]{images.jpeg}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  Impacts over \$5 trillion in Industry! 
+  \newline
+  \begin{itemize}
+    \item Encryption Cracking Speed-Up
+    \item Molecular Chemical Interaction Simulations
+    \item Materials Logistics
+  \end{itemize}
+\end{column}
+
+\end{columns}
+
+\end{frame}
 
 \begin{frame}
 
