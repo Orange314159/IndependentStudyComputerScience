@@ -8,6 +8,7 @@
 \usepackage{physics}
 \usepackage{graphicx}
 \usepackage{circuitikz}
+
 \usetikzlibrary{positioning, angles, quotes}
 
 \usetheme{Berkeley}
@@ -615,6 +616,121 @@ We can simply see that this can be constructed as a matrix below.
 
 \includegraphics[width=1\textwidth]{grover.png}
 
+
+\end{frame}
+
+
+%%%% Page 21 -- Intro to Multi Code Processing
+\begin{frame}
+\frametitle{A Different Approach}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1\textwidth]{multiProcess.png}
+
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+While quantum computing has many benefits and will lead to major speed ups in the future it is important to recognize the technology today that can speed up processes.
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+
+
+%%%% Page 22 -- introduction to openMP
+\begin{frame}
+\frametitle{OpenMP}
+
+
+\includegraphics[width=1\textwidth]{OpenMPforkjoin.png}
+
+OpenMP is an API that deals with multi-processing code. This is often leveraged in programs where you have to complete a similar action thousands or millions of times (vector multiplication for example).
+\end{frame}
+
+
+
+%%%% Page 23 -- Open MPI
+\begin{frame}
+\frametitle{OpenMPI}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\includegraphics[width=1\textwidth]{LaunchMPI1.png}
+
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+OpenMPI opens the world of multi-processing computing to cover multiple computers. OpenMPI allows for applications to scale to hundreds or even thousands of compute nodes.
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+
+
+%%%% Page 24 -- Open MP cont
+\begin{frame}[fragile]
+\frametitle{Example OpenMP Code}
+\begin{verbatim}
+#include <stdio.h>
+#include <omp.h>
+
+#define N 100000
+
+int main() {
+    int A[N], B[N], C[N];
+    #pragma omp parallel for
+    for (int i = 0; i < N; i++) {
+        C[i] = A[i] + B[i];
+    }
+    printf("Vector addition complete.\n");
+    
+    return 0;
+}
+\end{verbatim}
+\end{frame}
+
+
+%%%% Page 25 -- Open MPI cont
+\begin{frame}[fragile]
+\frametitle{Example OpenMPI Code}
+\begin{verbatim}
+#include <stdio.h>
+#include <mpi.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size;
+    MPI_Init(&argc, &argv);
+    
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+    
+    printf("Hello from process rank %d 
+      of total %d processes.\n", rank, size);
+    MPI_Finalize();
+    return 0;
+}
+\end{verbatim}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Implementing a Clustered Computer With Slurm}
+
+\includegraphics[height=1\textheight]{slurm.png}
 
 \end{frame}
 

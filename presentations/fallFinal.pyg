@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <mpi.h>
+
+int main(int argc, char *argv[]) {
+    int rank, size;
+
+    // 1. Initialize the MPI environment.
+    MPI_Init(&argc, &argv);
+
+    // 2. Get the rank (ID) of the current process within the communicator MPI_COMM_WORLD.
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+    // 3. Get the total number of processes running.
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    // Each process executes this code, using its unique 'rank' and 'size'.
+    printf("Hello from process rank %d of total %d processes.\n", rank, size);
+
+    // 4. Finalize the MPI environment.
+    MPI_Finalize();
+
+    return 0;
+}
