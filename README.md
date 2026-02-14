@@ -14,7 +14,7 @@ The student should follow the organization of the textbook, while using any othe
 
 ## Deliverables
 
-The deliverables for the first few sections of the course should be students notes and answered questions from the textbook, but as the course continues, the student should progress to sprint progress on their code. 
+The deliverables for the first few sections of the course should be students notes and answered questions from the textbook, but as the course continues, the student should progress to sprint progress on their code.
 
 ## Project Timeline and Plan
 

@@ -57,9 +57,7 @@ public class Matrix {
         
         ComplexNumber[][] augmentedData = new ComplexNumber[n][2 * n];
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                augmentedData[i][j] = this.data[i][j];
-            }
+            System.arraycopy(this.data[i], 0, augmentedData[i], 0, n);
             augmentedData[i][i + n] = new ComplexNumber(1.0);
         }
 
@@ -108,6 +106,7 @@ public class Matrix {
         return new Matrix(rows, cols, inverseData);
     }
 
+    @SuppressWarnings("unused")
     Matrix tensorProduct(Matrix other){
         Matrix outputMatrix = new Matrix(this.rows * other.rows, this.cols * other.cols);
 
@@ -120,6 +119,7 @@ public class Matrix {
         return outputMatrix;
     }
 
+    @SuppressWarnings("unused")
     Matrix addMatrix(Matrix other){
         if (rows == 0 || cols == 0 || other.rows == 0 || other.cols == 0) {
             throw new IllegalArgumentException("Adding a zero dimension matrix is not allowed.");
@@ -141,6 +141,7 @@ public class Matrix {
         return result;
     }
 
+    @SuppressWarnings("unused")
     Matrix subMatrix(Matrix other){
         if (rows == 0 || cols == 0 || other.rows == 0 || other.cols == 0) {
             throw new IllegalArgumentException("Subtracting a zero dimension matrix is not allowed.");
@@ -185,11 +186,13 @@ public class Matrix {
 
     }
 
+    @SuppressWarnings("unused")
     Matrix divMatrix(Matrix other){
         Matrix otherInverse = other.inverse();
         return this.multMatrix(otherInverse);
     }
 
+    @Override
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
 

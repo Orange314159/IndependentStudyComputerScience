@@ -1,6 +1,6 @@
 public class Gate extends Matrix {
     
-
+    @Override
     public void setIdentity(){
         super.setIdentity();
     }

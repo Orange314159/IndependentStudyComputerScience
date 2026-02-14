@@ -1,8 +1,8 @@
 // A complex number is a number that is a combination of a real and imaginary part
 // An imaginary number is considered to be a number that is some real number times "i" the imaginary unit equal to sqrt(-1)
 // As a convention of my code I will use the form (a + bi) for all complex numbers unless otherwise stated
-public class ComplexNumber implements Comparable{
-    public final static double epsilon = 0.00000001;
+public class ComplexNumber implements Comparable<ComplexNumber>{
+    public final static double EPSILON = 0.00000001;
     public double a;
     public double b;
 
@@ -247,8 +247,14 @@ public class ComplexNumber implements Comparable{
         return this.a + " + " + this.b + "i";
     }
 
-    public int compareTo(Object other){
-        return this.a > ((ComplexNumber) other).a ? 1 : -1;
+    @Override
+    public int compareTo(ComplexNumber other) {
+        return this.a > other.a ? 1 : -1;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) (this.a * 1000000 + this.b * 1000000);
     }
 
     @Override
@@ -257,10 +263,10 @@ public class ComplexNumber implements Comparable{
             return false;
         }
         if(((ComplexNumber) obj).a != this.a){
-            return Math.abs(((((ComplexNumber) obj).a)) - (this.a)) <= epsilon;
+            return Math.abs(((((ComplexNumber) obj).a)) - (this.a)) <= EPSILON;
         }
         if(((ComplexNumber) obj).b != this.b){
-            return Math.abs(((((ComplexNumber) obj).b)) - (this.b)) <= epsilon;
+            return Math.abs(((((ComplexNumber) obj).b)) - (this.b)) <= EPSILON;
         }
         return true;
     }

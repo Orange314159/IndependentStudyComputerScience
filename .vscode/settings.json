@@ -47,6 +47,15 @@
         "typeinfo": "cpp"
     },
     "cSpell.words": [
+        "acosh",
+        "acot",
+        "acoth",
+        "acsc",
+        "acsch",
+        "asec",
+        "asech",
+        "asinh",
+        "atanh",
         "CNOT",
         "Entanglion",
         "Hadamard",
