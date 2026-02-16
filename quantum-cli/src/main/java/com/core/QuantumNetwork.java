@@ -114,7 +114,7 @@ public class QuantumNetwork {
      * @param toName The receiver's name
      * @param classicalBits The classical bits describing the shared state
      */
-    public void sendEntagnledState(String fromName, String toName, String classicalBits) {
+    public void sendEntangledState(String fromName, String toName, String classicalBits) {
         sendClassicalMessage(fromName, toName, "ENTANGLED:" + classicalBits);
     }
 

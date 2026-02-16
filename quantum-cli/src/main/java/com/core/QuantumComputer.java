@@ -206,7 +206,7 @@ public class QuantumComputer {
             if (state[i].magnitude() > 1e-10) {
                 @SuppressWarnings("UnnecessaryTemporaryOnConversionFromString")
                 String binary = String.format("%0" + numQubits + "d", Integer.parseInt(Integer.toBinaryString(i)));
-                stringBuilder.append(String.format("|%s>: %s(probL $.4f)\n", binary, state[i].toString(), state[i].magnitudeSquared()));
+                stringBuilder.append(String.format("|%s>: %s(prob %.4f)\n", binary, state[i].toString(), state[i].magnitudeSquared()));
             }
         }
 

@@ -5,7 +5,7 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.quantum.sim</groupId>
+    <groupId>com</groupId>
     <artifactId>quantum-cli</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -56,7 +56,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.quantum.sim.cli.QuantumCLI</mainClass>
+                            <mainClass>com.cli.QuantumCLI</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -68,7 +68,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.quantum.sim.cli.QuantumCLI</mainClass>
+                            <mainClass>com.cli.QuantumCLI</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

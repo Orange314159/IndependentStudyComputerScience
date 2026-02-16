@@ -76,5 +76,6 @@
         "Toffoli",
         "Vaknin",
         "xors"
-    ]
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

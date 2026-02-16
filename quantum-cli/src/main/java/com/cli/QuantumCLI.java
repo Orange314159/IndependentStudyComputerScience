@@ -47,15 +47,15 @@ public class QuantumCLI {
         boolean running = true;
 
         while (running) {
-            System.out.println(PROMPT);
-            String input = scanner.next().trim();
+            System.out.print(PROMPT);
+            String input = scanner.nextLine().trim();
 
-            if (input.isEmpty()){
+            if (input.isEmpty()) {
                 continue;
             }
 
-            String[] tokens  = input.split("\\s+");
-            String   command = tokens[0].toLowerCase();
+            String[] tokens = input.split("\\s+");
+            String command = tokens[0].toLowerCase();
 
             try {
                 switch (command) {
