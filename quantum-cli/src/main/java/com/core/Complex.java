@@ -5,9 +5,21 @@ package com.core;
  * This class represents a complex number for quantum state amplitudes.
  */
 public class Complex {
-    private double real;
-    private double imaginary;
-    private  static final double EPSILON = 1e-15;
+    /**
+     * The real component of the complex number in rectangular form.
+     */
+    private final double real;
+    /**
+     * The imaginary component of the complex number in rectangular form.
+     */
+    private final double imaginary;
+    /**
+     * A small value that is used as a "close enough" approximation.
+     * <p>
+     * This value has been set to 1 * 10^{-15}
+     * @since 1.0.0
+     */
+    private static final double EPSILON = 1e-15;
 
     
     /**
