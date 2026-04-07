@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/322698628_2208141881_3381955732.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/152909129_2442810729_2121868637.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/1992734166_308971769_1424813890.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/1992734166_1889046037_768356120.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/80176329_407513816_4231420964.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/2839023428_2307786635_467452159.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/3681826760_2230675760_2157645157.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/1757930703_1648226514_516097221.mp4'
+file 'file:C:/Users/mattr/Desktop/School/IndependentStudyComputerScience/presentations/Semester_2/media/videos/blochScene/480p15/partial_movie_files/HeatOnGate/3738765291_2230675760_577056111.mp4'
