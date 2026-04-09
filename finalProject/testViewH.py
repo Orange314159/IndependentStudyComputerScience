@@ -4,8 +4,15 @@ import numpy as np
 from pathlib import Path
 from mpl_toolkits.mplot3d import Axes3D
 
+
+## a bit of debug because it couldnt find the files
+# print(Path('.\\finalProject').cwd()) 
+# files = list(Path('.\\finalProject').glob('trajectory_*.csv'))
+# print(f"Found {len(files)} files: {files}")
+
+
 trajectory_files = sorted(
-    Path('.').glob('trajectory_*.csv'),
+    Path('.\\finalProject').glob('traj_H_delta_*.csv'),
     key=lambda path: int(path.stem.split('_')[-1]) if path.stem.split('_')[-1].isdigit() else float('inf')
 )
 
@@ -58,7 +65,7 @@ cb.set_ticklabels(['0', str(len(trajectories) - 1)])
 ax.set_xlabel('X (Superposition)')
 ax.set_ylabel('Y (Phase)')
 ax.set_zlabel('Z (States |0> to |1>)')
-ax.set_title(f'Microwave Pulse Simulation\n({len(trajectories)} trajectories)')
+ax.set_title(f'Microwave Pulse Simulation for a Hadamard Gate\n({len(trajectories)} trajectories)')
 ax.legend(loc='upper right')
 
 # Set view for better perspective
