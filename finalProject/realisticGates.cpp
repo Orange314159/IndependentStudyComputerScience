@@ -63,7 +63,6 @@ void get_bloch_coordinates(Qubit q, double &x, double &y, double &z) {
 
 void run_gate_simulation(std::string gateName, double targetAngle, double phase, int numRuns) {
     double omega_fixed = 1.0;
-    // Duration = Angle / Omega (for a perfect pulse)
     double duration = targetAngle / omega_fixed;
 
     for (int i = 0; i < numRuns; i++) {
@@ -73,14 +72,19 @@ void run_gate_simulation(std::string gateName, double targetAngle, double phase,
 
         // std::string filename = "traj_" + gateName + "_delta_" + std::to_string(i) + ".csv";
         
-        std::string filename = "traj_" + gateName + "_specialDELTA_.csv";
+        std::string filename = "traj_" + gateName + "_realData.csv";
         std::ofstream file(filename);
-        file << "time,x,y,z\n";
+        file << "time,x,y,z,microwave_val\n";
 
         for (double t = 0; t <= duration; t += params.dt) {
             double x, y, z;
             get_bloch_coordinates(myQubit, x, y, z);
-            file << t << "," << x << "," << y << "," << z << "\n";
+
+            double mw_frequency = 10.0; // Simplified for visualization
+            double microwave_val = params.omega * cos(mw_frequency * t + params.phi);
+
+            
+            file << t << "," << x << "," << y << "," << z << "," << microwave_val << "\n";
             myQubit = rk4_step(myQubit, params);
         }
         file.close();
@@ -89,6 +93,9 @@ void run_gate_simulation(std::string gateName, double targetAngle, double phase,
 }
 
 int main() {
+
+    std::cout << noise_dist(generator) << std::endl;
+    
     const double PI = 3.141592653589793;
 
     // Simulate X Gate (PI rotation around X-axis, phase = 0)
