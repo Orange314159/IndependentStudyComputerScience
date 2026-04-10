@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-df = pd.read_csv('finalProject/cnot_data.csv')
+df = pd.read_csv('finalProject/cnot_data_hadamard.csv')
 
 fig, ax = plt.subplots()
 states = ['|00>', '|01>', '|10>', '|11>']
@@ -19,6 +19,6 @@ def animate(i):
 ani = animation.FuncAnimation(fig, animate, frames=len(df), interval=20)
 
 # Save the animation as a GIF
-ani.save('finalProject/cnot_animation.gif', writer='pillow', fps=50)
+ani.save('finalProject/cnot_animation_2.gif', writer='pillow', fps=50)
 
 plt.show()

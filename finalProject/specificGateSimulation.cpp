@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 #include <string>
+#include <random>
 
 using complex_t = std::complex<double>;
 const complex_t I(0, 1);
@@ -20,6 +21,10 @@ struct SimulationParams {
     double dt;      // Time step
 };
 
+std::default_random_engine generator;
+std::normal_distribution<double> noise_dist(0.0, 1.2); // Mean 0, StdDev 1.2
+
+
 Qubit compute_derivative(Qubit q, SimulationParams p) {
     Qubit dq;
     // Modified Hamiltonian with Phase (phi)
@@ -27,8 +32,11 @@ Qubit compute_derivative(Qubit q, SimulationParams p) {
     complex_t drive = p.omega * std::exp(I * p.phi);
     complex_t drive_conj = p.omega * std::exp(-I * p.phi);
 
-    dq.alpha = -I * 0.5 * (p.delta * q.alpha + drive_conj * q.beta);
-    dq.beta  = -I * 0.5 * (drive * q.alpha - p.delta * q.beta);
+    // more realistic noise model
+    double stochastic_delta = p.delta + noise_dist(generator);
+
+    dq.alpha = -I * 0.5 * (stochastic_delta * q.alpha + drive_conj * q.beta);
+    dq.beta  = -I * 0.5 * (drive * q.alpha - stochastic_delta * q.beta);
     return dq;
 }
 
@@ -60,11 +68,12 @@ void run_gate_simulation(std::string gateName, double targetAngle, double phase,
 
     for (int i = 0; i < numRuns; i++) {
         Qubit myQubit = {complex_t(1, 0), complex_t(0, 0)};
-        // Linearly increase detuning from 0.0 to 0.5
-        double current_delta = 0.5 * ((double)i / (double)numRuns) - 0.25 * ((double)100 / (double)numRuns); 
+        double current_delta = 0; 
         SimulationParams params = {omega_fixed, current_delta, phase, 0.001};
 
-        std::string filename = "traj_" + gateName + "_delta_" + std::to_string(i) + ".csv";
+        // std::string filename = "traj_" + gateName + "_delta_" + std::to_string(i) + ".csv";
+        
+        std::string filename = "traj_" + gateName + "_specialDELTA_.csv";
         std::ofstream file(filename);
         file << "time,x,y,z\n";
 
@@ -83,11 +92,11 @@ int main() {
     const double PI = 3.141592653589793;
 
     // Simulate X Gate (PI rotation around X-axis, phase = 0)
-    run_gate_simulation("X", PI, 0.0, 100);
+    run_gate_simulation("X", PI, 0.0, 1);
 
     // Simulate H Gate (PI/2 rotation around Y-axis, phase = PI/2)
     // Note: This is a "Square root of Y" pulse, common proxy for visualizing H
-    run_gate_simulation("H", PI / 2.0, PI / 2.0, 100);
+    run_gate_simulation("H", PI / 2.0, PI / 2.0, 1);
 
     return 0;
 }

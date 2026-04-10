@@ -11,10 +11,17 @@ from mpl_toolkits.mplot3d import Axes3D
 # print(f"Found {len(files)} files: {files}")
 
 
+# trajectory_files = sorted(
+#     Path('.\\finalProject').glob('traj_H_delta_*.csv'),
+#     key=lambda path: int(path.stem.split('_')[-1]) if path.stem.split('_')[-1].isdigit() else float('inf')
+# )
+
+
 trajectory_files = sorted(
-    Path('.\\finalProject').glob('traj_H_delta_*.csv'),
+    Path('.\\finalProject').glob('traj_H_specialDELTA_*.csv'),
     key=lambda path: int(path.stem.split('_')[-1]) if path.stem.split('_')[-1].isdigit() else float('inf')
 )
+
 
 if not trajectory_files:
     print("No trajectory_*.csv files found in the current folder.")
