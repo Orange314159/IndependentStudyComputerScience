@@ -60,10 +60,10 @@ struct SimulationNoise{
     double current_omega_noise = 0.00;
     double current_delta_noise = 0.00;
 
-    double omega_correlation = 0.95;
-    double delta_correlation = 0.99; // delta is much more correlated 
+    double omega_correlation = 1;
+    double delta_correlation = 1; // delta is much more correlated 
 
-    SimulationNoise() : omega_dist(0.00, 0.01), delta_dist(0.00, 0.01) { // adjust stdev and mean if needed HERE
+    SimulationNoise() : omega_dist(0, 0), delta_dist(0, 0) { // adjust stdev and mean if needed HERE
         std::random_device rd;
         generator.seed(rd());
     }

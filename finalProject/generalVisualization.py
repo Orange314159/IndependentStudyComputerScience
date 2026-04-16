@@ -72,4 +72,4 @@ def plot_bloch_spheres(csv_file):
     plt.show()
 
 if __name__ == "__main__":
-    plot_bloch_spheres("simulation_7_ds.csv")
+    plot_bloch_spheres("simulation_8.csv")
