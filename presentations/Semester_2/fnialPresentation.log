@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.13)  13 APR 2026 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.13)  17 APR 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semseter_1/fallFinal.tex
-(c:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semseter_1/fallFinal.tex
+**c:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semester_2/fnialPresentation.tex
+(c:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semester_2/fnialPresentation.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
@@ -752,8 +752,8 @@ File: tikzlibraryangles.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeBerkeley.sty (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthemesidebar.sty
 \beamer@sidebarwidth=\dimen358
 \beamer@headheight=\dimen359
-) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerectangles.sty) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty)) (fallFinal.aux)
-\openout1 = `fallFinal.aux'.
+) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthemerectangles.sty) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemewhale.sty) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthemeorchid.sty)) (fnialPresentation.aux)
+\openout1 = `fnialPresentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
@@ -828,9 +828,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 64.
- (fallFinal.out) (fallFinal.out)
+ (fnialPresentation.out) (fnialPresentation.out)
 \@outlinefile=\write5
-\openout5 = `fallFinal.out'.
+\openout5 = `fnialPresentation.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 64.
@@ -893,7 +893,7 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (fallFinal.nav)
+) (fnialPresentation.nav)
 <logo.png, id=12, 200.75pt x 169.63374pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
@@ -916,381 +916,76 @@ Package pdftex.def Info: logo.png  used on input line 68.
  <./logo.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 90.
+Package pdftex.def Info: logo.png  used on input line 97.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+<Rigetti-scaled-1535x2048.jpeg, id=47, 1540.75626pt x 2055.68pt>
+File: Rigetti-scaled-1535x2048.jpeg Graphic file (type jpg)
+<use Rigetti-scaled-1535x2048.jpeg>
+Package pdftex.def Info: Rigetti-scaled-1535x2048.jpeg  used on input line 97.
+(pdftex.def)             Requested size: 142.79984pt x 190.52382pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 90.
+Package pdftex.def Info: logo.png  used on input line 97.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
  [2
 
-]
+ <./Rigetti-scaled-1535x2048.jpeg>]
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 112.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+<quantumSolutions.png, id=74, 1029.8475pt x 578.16pt>
+File: quantumSolutions.png Graphic file (type png)
+<use quantumSolutions.png>
+Package pdftex.def Info: quantumSolutions.png  used on input line 112.
+(pdftex.def)             Requested size: 290.72818pt x 163.2158pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 112.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
  [3
 
-]
+ <./quantumSolutions.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 128.
+Package pdftex.def Info: logo.png  used on input line 117.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 128.
+Package pdftex.def Info: logo.png  used on input line 117.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
  [4
 
 ]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 150.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 150.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [5
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 191.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 191.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [6
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 219.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 219.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [7
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 273.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 273.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [8
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 296.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 296.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [9
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 328.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 328.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [10
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 346.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 346.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [11
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 369.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 369.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [12
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 401.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 401.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [13
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 472.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 472.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [14
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 497.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<images.jpeg, id=395, 196.735pt x 258.9675pt>
-File: images.jpeg Graphic file (type jpg)
-<use images.jpeg>
-Package pdftex.def Info: images.jpeg  used on input line 497.
-(pdftex.def)             Requested size: 145.3713pt x 191.35237pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 497.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [15
-
- <./images.jpeg>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 519.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<RunningTime.png, id=423, 562.1pt x 619.31375pt>
-File: RunningTime.png Graphic file (type png)
-<use RunningTime.png>
-Package pdftex.def Info: RunningTime.png  used on input line 519.
-(pdftex.def)             Requested size: 145.3713pt x 160.16728pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 519.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [16
-
- <./RunningTime.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 566.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<Grovers_algorithm_geometry.png, id=451, 175.41263pt x 182.07831pt>
-File: Grovers_algorithm_geometry.png Graphic file (type png)
-<use Grovers_algorithm_geometry.png>
-Package pdftex.def Info: Grovers_algorithm_geometry.png  used on input line 566.
-(pdftex.def)             Requested size: 123.5665pt x 128.2652pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 566.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [17
-
- <./Grovers_algorithm_geometry.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 592.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: Grovers_algorithm_geometry.png Graphic file (type png)
-<use Grovers_algorithm_geometry.png>
-Package pdftex.def Info: Grovers_algorithm_geometry.png  used on input line 592.
-(pdftex.def)             Requested size: 145.3713pt x 150.8999pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 592.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [18
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 609.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 609.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [19
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 620.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<grover.png, id=532, 409.53pt x 279.0425pt>
-File: grover.png Graphic file (type png)
-<use grover.png>
-Package pdftex.def Info: grover.png  used on input line 620.
-(pdftex.def)             Requested size: 290.74263pt x 198.1173pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 620.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [20
-
- <./grover.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 642.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<multiProcess.png, id=560, 845.1575pt x 633.36626pt>
-File: multiProcess.png Graphic file (type png)
-<use multiProcess.png>
-Package pdftex.def Info: multiProcess.png  used on input line 642.
-(pdftex.def)             Requested size: 145.3713pt x 108.93687pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 642.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [21
-
- <./multiProcess.png (PNG copy)>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 655.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<OpenMPforkjoin.png, id=587, 526.1256pt x 181.6386pt>
-File: OpenMPforkjoin.png Graphic file (type png)
-<use OpenMPforkjoin.png>
-Package pdftex.def Info: OpenMPforkjoin.png  used on input line 655.
-(pdftex.def)             Requested size: 290.74263pt x 100.38101pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 655.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [22
-
- <./OpenMPforkjoin.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 678.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<LaunchMPI1.png, id=615, 589.2414pt x 344.487pt>
-File: LaunchMPI1.png Graphic file (type png)
-<use LaunchMPI1.png>
-Package pdftex.def Info: LaunchMPI1.png  used on input line 678.
-(pdftex.def)             Requested size: 145.3713pt x 84.98613pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 678.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [23
-
- <./LaunchMPI1.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 685.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-\openout4 = `fallFinal.vrb'.
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 703.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- (fallFinal.vrb)
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 703.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [24
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 708.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-\openout4 = `fallFinal.vrb'.
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 726.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- (fallFinal.vrb)
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 726.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [25
-
-]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 735.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-<slurm.png, id=697, 1188.44pt x 997.7275pt>
-File: slurm.png Graphic file (type png)
-<use slurm.png>
-Package pdftex.def Info: slurm.png  used on input line 735.
-(pdftex.def)             Requested size: 266.98851pt x 224.14662pt.
-
-Overfull \vbox (0.91759pt too high) detected at line 735
- []
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 735.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-[26
-
- <./slurm.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 741.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 741.
-(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
- [27
-
-]
 \tf@nav=\write6
-\openout6 = `fallFinal.nav'.
+\openout6 = `fnialPresentation.nav'.
 
 \tf@toc=\write7
-\openout7 = `fallFinal.toc'.
+\openout7 = `fnialPresentation.toc'.
 
 \tf@snm=\write8
-\openout8 = `fallFinal.snm'.
+\openout8 = `fnialPresentation.snm'.
 
- (fallFinal.aux)
+ (fnialPresentation.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
-Package rerunfilecheck Info: File `fallFinal.out' has not changed.
+Package rerunfilecheck Info: File `fnialPresentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 49542 strings out of 467691
- 1204763 string characters out of 5414987
- 1944022 words of memory out of 5000000
- 77859 multiletter control sequences out of 15000+600000
- 635584 words of font info for 68 fonts, out of 8000000 for 9000
+ 47841 strings out of 467691
+ 1164999 string characters out of 5414987
+ 1848334 words of memory out of 5000000
+ 76210 multiletter control sequences out of 15000+600000
+ 635727 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,23n,123p,2050b,1573s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\mattr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on fallFinal.pdf (27 pages, 1159055 bytes).
+ 128i,23n,123p,2058b,1227s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
+Output written on fnialPresentation.pdf (4 pages, 1414361 bytes).
 PDF statistics:
- 817 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
