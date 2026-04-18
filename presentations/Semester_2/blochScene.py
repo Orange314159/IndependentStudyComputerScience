@@ -85,7 +85,6 @@ class HeatOnQubit(ThreeDScene):
             rate_func=smooth,
         )
 
-        # Final camera sweep
         self.move_camera(phi=80 * DEGREES, theta=220 * DEGREES, run_time=3)
         self.wait(1)
 
@@ -96,15 +95,12 @@ class HeatOnQubit(ThreeDScene):
         self.wait(2)
 
 
-# 
-# Scene 2 - How heat degrades a quantum gate (Hadamard)
-# 
+
 class HeatOnGate(ThreeDScene):
     def construct(self):
         # ── Camera ──
         self.set_camera_orientation(phi=70 * DEGREES, theta=30 * DEGREES)
 
-        # ── Scaffold ──
         sphere = Sphere(radius=2, fill_opacity=0.06, color=GREY,
                         resolution=(24, 24))
         equator = Circle(radius=2, color=BLUE_E).set_opacity(0.25)
@@ -124,20 +120,17 @@ class HeatOnGate(ThreeDScene):
         self.add(axes, sphere, equator, meridian)
         self.add_fixed_in_frame_mobjects(lbl_z0, lbl_z1, lbl_plus)
 
-        # Title 
         title = Text("Hadamard Gate  (H)  —  Ideal vs Noisy", font_size=34,
                       weight=BOLD).to_edge(UP)
         self.add_fixed_in_frame_mobjects(title)
         self.play(FadeIn(title, shift=DOWN * 0.3))
 
-        # ── Slow orbit to establish 3‑D ──
         self.begin_ambient_camera_rotation(rate=0.12)
         self.wait(2)
         self.stop_ambient_camera_rotation()
 
         angle_tracker = ValueTracker(0.0)
 
-        # Ideal arrow (ghost)
         ideal_arrow = always_redraw(lambda: Arrow3D(
             ORIGIN,
             [2 * np.sin(angle_tracker.get_value()),
@@ -146,7 +139,6 @@ class HeatOnGate(ThreeDScene):
             color=GREEN_C, resolution=8,
         ).set_opacity(0.35))
 
-        # Ideal trace curve
         ideal_trace = always_redraw(lambda: ParametricFunction(
             lambda t: np.array([
                 2 * np.sin(t), 0, 2 * np.cos(t)
@@ -155,7 +147,6 @@ class HeatOnGate(ThreeDScene):
             color=GREEN_C,
         ).set_opacity(0.4))
 
-        # Noisy arrow
         def _noisy_end():
             a = angle_tracker.get_value()
             if a < 0.01:
@@ -173,7 +164,6 @@ class HeatOnGate(ThreeDScene):
             lambda: Arrow3D(ORIGIN, _noisy_end(), color=RED_C, resolution=8)
         )
 
-        # Legend
         legend_ideal = Text("Ideal", font_size=22, color=GREEN_C)
         legend_noisy = Text("Noisy (with heat)", font_size=22, color=RED_C)
         legend = VGroup(legend_ideal, legend_noisy).arrange(DOWN, aligned_edge=LEFT, buff=0.15)
@@ -183,14 +173,12 @@ class HeatOnGate(ThreeDScene):
 
         self.add(ideal_arrow, ideal_trace, noisy_arrow)
 
-        # Camera follows the action
         self.play(
             angle_tracker.animate.set_value(PI / 2),
             run_time=4,
             rate_func=linear,
         )
 
-        # Camera swing to inspect the error
         self.move_camera(phi=60 * DEGREES, theta=130 * DEGREES, run_time=2.5)
 
         err_lbl = Text("Gate Fidelity Error", font_size=26, color=RED_B,
@@ -198,9 +186,8 @@ class HeatOnGate(ThreeDScene):
         self.add_fixed_in_frame_mobjects(err_lbl)
         self.play(FadeIn(err_lbl, shift=UP * 0.3))
 
-        # Hold the noisy jitter at the final position for a couple seconds
         self.wait(2)
 
-        # Another camera angle
+        ## another camera movement
         self.move_camera(phi=85 * DEGREES, theta=250 * DEGREES, run_time=3)
         self.wait(2)
