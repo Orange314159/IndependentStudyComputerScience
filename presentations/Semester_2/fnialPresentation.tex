@@ -111,6 +111,200 @@
 
 \end{frame}
 
+%%%% Slide 3 -- Linear Algebra Crash Course (Refresher)
+\begin{frame}
+\frametitle{Linear Algebra Refresher}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+    \textbf{Dirac Notation}
+    \begin{itemize}
+        \item Ket: $\ket{\psi} = \begin{pmatrix} \alpha \\ \beta \end{pmatrix}$
+        \item Bra: $\bra{\psi} = \begin{pmatrix} \alpha^* & \beta^* \end{pmatrix}$
+        \item Inner Product: $\braket{\phi}{\psi}$
+    \end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \textbf{Tensor Products}
+    Used to represent multi-qubit systems:
+    \[ \ket{\psi} \otimes \ket{\phi} = \ket{\psi\phi} \]
+    \textbf{Conjugate Transpose}
+    \[ A^\dagger = (A^T)^* \]
+    A gate $U$ is valid if $U^\dagger U = I$.
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%% Slide 4 -- What is a Quantum Gate?
+\begin{frame}
+\frametitle{Quantum Gates: The Ideal Physics World}
+\begin{block}{High-Level Definition}
+    A quantum gate is a unitary transformation applied to a qubit state. In a "perfect" physics world, these operations are:
+\end{block}
+\begin{itemize}
+    \item \textbf{Deterministic:} Always performs the exact rotation intended.
+    \item \textbf{Isolated:} No interaction with the outside environment.
+    \item \textbf{Reversible:} No information is lost during computation.
+\end{itemize}
+\centering
+\begin{quantikz}
+    \lstick{$\ket{0}$} & \gate{H} & \gate{X} & \gate{H} & \rstick{$\ket{0}$}
+\end{quantikz}
+\end{frame}
+
+%%%% Slide 5 -- When Reality Strikes: Noise
+\begin{frame}
+\frametitle{Comparing Ideal Gates to Noisy Reality}
+
+\begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+        \centering
+        \textbf{Noisy Output}
+        \vspace{0.5em}
+        \includegraphics[width=\textwidth, keepaspectratio]{noiseSingleQubit.png}
+    \end{column}
+
+    \begin{column}{0.48\textwidth}
+        \centering
+        \textbf{Ideal Output}
+        \vspace{0.5em}
+        \includegraphics[width=\textwidth, keepaspectratio]{cleanSingleQubit.png}
+    \end{column}
+\end{columns}
+
+\vfill
+\begin{itemize}
+    \item \textbf{Left:} Gate errors create a ``wavey'' appearance.
+    \item \textbf{Right:} Theoretical simulation in a perfect environment.
+\end{itemize}
+
+\end{frame}
+
+%%%% Slide 6 -- Qiskit Simulations
+\begin{frame}[t] % [t] vertically aligns all columns at the top
+\frametitle{Qiskit Simulation Architecture}
+
+\begin{columns}[t] % [t] keeps content aligned at the top of the column
+
+    %%%% Left Column %%%%
+    \begin{column}{0.48\textwidth}
+        \vspace{-0.05\textheight}
+        \begin{itemize}
+            \item \textbf{Gate Subsections:} Modular circuit design for scalability.
+            \item \textbf{Batching:} Running multiple ``shots'' to gather statistics on noisy outputs.
+        \end{itemize}
+        
+        \vfill 
+        
+        \centering
+        \begin{figure}
+            \includegraphics[height=0.45\textheight, width=\textwidth, keepaspectratio]{manyShotSimulationQiskit.png}
+            \caption*{\tiny Qiskit simulation results}
+        \end{figure}
+    \end{column}
+
+    \hspace{0.02\textwidth}
+
+    %%%% Right Column %%%%
+    \begin{column}{0.45\textwidth}
+      \vspace{-0.1\textheight}
+        \centering
+        \begin{figure}
+            \includegraphics[height=0.85\textheight, width=\textwidth, keepaspectratio]{qubitDiffuser.png}
+            \caption{\small Qubit Diffuser Circuit}
+        \end{figure}
+    \end{column}
+
+\end{columns}
+\end{frame}
+
+% %%%% Slide 7 -- Quantum Error Correction (QEC)
+% \begin{frame}
+% \frametitle{Why the "Shots" Vary: QEC}
+% \begin{columns}
+% \begin{column}{0.6\textwidth}
+%     Running 1024 "shots" results in a histogram rather than a single value due to:
+%     \begin{enumerate}
+%         \item Quantum Probabilistic Nature
+%         \item Device Noise
+%     \end{enumerate}
+%     \textbf{Quantum Error Correction (QEC)}:
+%     Using multiple physical qubits to represent one ``Logical Qubit.''
+% \end{column}
+% \begin{column}{0.4\textwidth}
+%     % \includegraphics[width=\textwidth]{qec_histogram.png}
+% \end{column}
+% \end{columns}
+% \end{frame}
+
+%%%% Slide 8 -- The Interface: CLI
+\begin{frame}[fragile]
+\frametitle{Command Line Interface (CLI)}
+In order to bridge the gap between the high level Qiskit simulations and low-level C phsysics simulation I developed a CLI to simulate perfect quantum gates.
+\begin{exampleblock}{Sample Usage}
+\begin{verbatim}
+$ qit> create q1 10 
+$ qit> cnot q1 0 1 ## 0 is ctrl and 1 is targ
+$ qit> entangle bp1 q1 2 3 ## bell pair
+$ qit> measure q1 0 1 2 3
+\end{verbatim}
+\end{exampleblock}
+This also allows for easy integration with the C-based simulator, where we can directly tell the CLI to read from the QIT output.
+\end{frame}
+
+%%%% Slide 9 -- Physics Simulation in C
+\begin{frame}
+\frametitle{Low-Level Simulation in C}
+
+Schrodinger Equation:
+\[ i \frac{d}{dt} |\psi(t)\rangle = \hat{H}(t) |\psi(t)\rangle \]
+Single Qubit Hamiltonian:
+\[ \hat{H}_{k} = \frac{1}{2} \delta \hat{\sigma}_z + \frac{1}{2} \Omega ( \cos(\phi) \hat{\sigma}_x + \sin(\phi) \hat{\sigma}_y ) \]
+Cross-Resonance Hamiltonian:
+\[ \hat{H}_{CR} = \frac{\Omega_{cr}}{2} ( \hat{\sigma}_z^{(c)} \otimes \hat{\sigma}_x^{(t)} ) \]
+
+% \centering
+% \includegraphics[height=0.85\textheight, width=\textwidth, keepaspectratio]{fourQubitSimulation.png}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Low-Level Simulation in C (Cont.)}
+
+\centering
+\includegraphics[height=0.85\textheight, width=\textwidth, keepaspectratio]{fourQubitSimulation.png}
+\end{frame}
+
+%%%% Slide 10 -- Takeaways and Conclusions
+\begin{frame}
+\frametitle{Takeaways and Conclusions}
+
+\begin{itemize}
+    \item \textbf{Integration is Key:} Quantum computers won't replace clusters; they will act as specialized ``accelerators.''
+    
+    \item \textbf{Hardware vs. Simulation:} Simulation is essential for debugging QEC algorithms before running on expensive hardware.
+    \begin{itemize}
+        \item \textbf{Example:} Simulating a noisy CNOT gate to understand error rates.
+    \end{itemize}
+    
+    \item \textbf{Future Work:} Optimizing the C-simulation with OpenMPI for massively parallel state-vector evolution.
+\end{itemize}
+
+\vspace{1em}
+
+\begin{center}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \setbeamercolor{block title}{bg=MySchoolBlue, fg=white}
+        \begin{block}{}
+            \centering \Large \textbf{Questions?}
+        \end{block}
+    \end{minipage}
+\end{center}
+
+\end{frame}
+
 %% Extra page to help development at so i can scroll and there is enough room for me to breath
 \begin{frame}
 

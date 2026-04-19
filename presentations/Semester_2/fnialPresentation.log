@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.13)  17 APR 2026 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.13)  18 APR 2026 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -948,13 +948,137 @@ Package pdftex.def Info: logo.png  used on input line 112.
  <./quantumSolutions.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 117.
+Package pdftex.def Info: logo.png  used on input line 135.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 117.
+Package pdftex.def Info: logo.png  used on input line 135.
 (pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
  [4
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 152.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 152.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [5
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 180.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+<noiseSingleQubit.png, id=162, 449.5194pt x 474.8139pt>
+File: noiseSingleQubit.png Graphic file (type png)
+<use noiseSingleQubit.png>
+Package pdftex.def Info: noiseSingleQubit.png  used on input line 180.
+(pdftex.def)             Requested size: 139.5552pt x 147.40814pt.
+<cleanSingleQubit.png, id=163, 361.35pt x 361.35pt>
+File: cleanSingleQubit.png Graphic file (type png)
+<use cleanSingleQubit.png>
+Package pdftex.def Info: cleanSingleQubit.png  used on input line 180.
+(pdftex.def)             Requested size: 139.5552pt x 139.55301pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 180.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [6
+
+ <./noiseSingleQubit.png> <./cleanSingleQubit.png>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 218.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+<manyShotSimulationQiskit.png, id=192, 594.72188pt x 450.9347pt>
+File: manyShotSimulationQiskit.png Graphic file (type png)
+<use manyShotSimulationQiskit.png>
+Package pdftex.def Info: manyShotSimulationQiskit.png  used on input line 218.
+(pdftex.def)             Requested size: 133.02621pt x 100.86418pt.
+<qubitDiffuser.png, id=193, 505.89pt x 623.32875pt>
+File: qubitDiffuser.png Graphic file (type png)
+<use qubitDiffuser.png>
+Package pdftex.def Info: qubitDiffuser.png  used on input line 218.
+(pdftex.def)             Requested size: 130.83356pt x 161.20564pt.
+
+Overfull \vbox (43.01765pt too high) detected at line 218
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 218.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+[7
+
+ <./manyShotSimulationQiskit.png> <./qubitDiffuser.png>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 241.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+\openout4 = `fnialPresentation.vrb'.
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 252.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ (fnialPresentation.vrb)
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 252.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [8
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 268.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 268.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [9
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 277.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+<fourQubitSimulation.png, id=276, 1084.05pt x 722.7pt>
+File: fourQubitSimulation.png Graphic file (type png)
+<use fourQubitSimulation.png>
+Package pdftex.def Info: fourQubitSimulation.png  used on input line 277.
+(pdftex.def)             Requested size: 285.78317pt x 190.52211pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 277.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [10
+
+ <./fourQubitSimulation.png>]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 306.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 306.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [11
+
+]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 311.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 311.
+(pdftex.def)             Requested size: 54.62708pt x 46.1589pt.
+ [12
 
 ]
 \tf@nav=\write6
@@ -975,17 +1099,17 @@ Package rerunfilecheck Info: File `fnialPresentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 47841 strings out of 467691
- 1164999 string characters out of 5414987
- 1848334 words of memory out of 5000000
- 76210 multiletter control sequences out of 15000+600000
- 635727 words of font info for 68 fonts, out of 8000000 for 9000
+ 48233 strings out of 467691
+ 1174394 string characters out of 5414987
+ 1864334 words of memory out of 5000000
+ 76581 multiletter control sequences out of 15000+600000
+ 636777 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,23n,123p,2058b,1227s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on fnialPresentation.pdf (4 pages, 1414361 bytes).
+<C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mattr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on fnialPresentation.pdf (12 pages, 1978441 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 83 words of extra memory for PDF output out of 10000 (max. 10000000)
 
