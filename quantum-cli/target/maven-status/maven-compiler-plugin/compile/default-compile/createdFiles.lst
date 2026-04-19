@@ -1,0 +1,6 @@
+com\core\Complex.class
+com\core\QuantumComputer.class
+com\core\QuantumNetwork$Message.class
+com\simulation\CircuitBuilder.class
+com\cli\QuantumCLI.class
+com\core\QuantumNetwork.class
