@@ -1,5 +1,20 @@
 # Quantum Computing and its Applications
 
+## Spring Presentation
+![Slide 1](assets\fnialPresentation-01.png)
+![Slide 2](assets\fnialPresentation-02.png)
+![Slide 3](assets\fnialPresentation-03.png)
+![Slide 4](assets\fnialPresentation-04.png)
+![Slide 5](assets\fnialPresentation-05.png)
+![Slide 6](assets\fnialPresentation-06.png)
+![Slide 7](assets\fnialPresentation-07.png)
+![Slide 8](assets\fnialPresentation-08.png)
+![Slide 9](assets\fnialPresentation-09.png)
+![Slide 10](assets\fnialPresentation-10.png)
+![Slide 11](assets\fnialPresentation-11.png)
+<!-- ![Slide 12](assets\fnialPresentation-12.png) -->
+
+
 ## Overview of Course Work
 
 The goal of this course is for the student to gain an understanding of how quantum computing works and develop a tool to simulate the basic aspects of quantum computing on a classical computer while checking its validity with publicly open quantum computers. In addition to making a tool to simulate a quantum computer, it could prove interesting for the student to develop a basic algorithm based on post-quantum security. This course will give the student opportunities to learn of a quickly developing field in the professional world and further their understanding of low level computing. Additionally, this should be exciting for the students because quantum computing is a quickly growing sector and many projections place it to be the next big piece of technology after AI.
@@ -16,33 +31,3 @@ The student should follow the organization of the textbook, while using any othe
 
 The deliverables for the first few sections of the course should be students notes and answered questions from the textbook, but as the course continues, the student should progress to sprint progress on their code.
 
-## Project Timeline and Plan
-
-### Week 1
-
-- Write the basic README.md
-- Create a matrix class that allows for basic matrix operations
-- Plan the rest of the weeks
-
-### Week 2
-
-- Add in quantum specific functionality for the matrix class (done)
-- Add in a gate class (done)
-- Add in a qubit class (done)
-- Find a method for graphing / visualization (done (QT))
-
-### Week 3
-
-- Create many gates that are used
-- Create method of input for circuit
-- Implement Visualization for circuit (compile to tex)
-
-### Week 4
-
-- Run priliminary simulations
-- Compare to other quantum computers
-- Plan the following weeks
-
-### Further Weeks
-
-- To be decided in Week 4
