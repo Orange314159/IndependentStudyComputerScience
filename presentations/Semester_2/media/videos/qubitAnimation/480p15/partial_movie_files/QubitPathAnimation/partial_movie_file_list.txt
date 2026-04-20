@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semester_2/media/videos/qubitAnimation/480p15/partial_movie_files/QubitPathAnimation/1028453062_132788812_4034053343.mp4'
+file 'file:C:/Users/mattr/Desktop/Home/Projects/IndependentStudyComputerScience/presentations/Semester_2/media/videos/qubitAnimation/480p15/partial_movie_files/QubitPathAnimation/1839749486_2442810729_2443975642.mp4'

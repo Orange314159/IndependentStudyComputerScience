@@ -11,7 +11,7 @@
 ![Slide 8](assets/fnialPresentation-08.png)
 ![Slide 9](assets/fnialPresentation-09.png)
 ![Slide 10](assets/fnialPresentation-10.png)
-![Slide 11](asset/fnialPresentation-11.png)
+![Slide 11](assets/fnialPresentation-11.png)
 <!-- ![Slide 12](assets\fnialPresentation-12.png) -->
 
 
