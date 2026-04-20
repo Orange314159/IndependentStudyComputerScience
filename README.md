@@ -1,17 +1,17 @@
 # Quantum Computing and its Applications
 
 ## Spring Presentation
-![Slide 1](assets\fnialPresentation-01.png)
-![Slide 2](assets\fnialPresentation-02.png)
-![Slide 3](assets\fnialPresentation-03.png)
-![Slide 4](assets\fnialPresentation-04.png)
-![Slide 5](assets\fnialPresentation-05.png)
-![Slide 6](assets\fnialPresentation-06.png)
-![Slide 7](assets\fnialPresentation-07.png)
-![Slide 8](assets\fnialPresentation-08.png)
-![Slide 9](assets\fnialPresentation-09.png)
-![Slide 10](assets\fnialPresentation-10.png)
-![Slide 11](assets\fnialPresentation-11.png)
+![Slide 1](assets/fnialPresentation-01.png)
+![Slide 2](assets/fnialPresentation-02.png)
+![Slide 3](assets/fnialPresentation-03.png)
+![Slide 4](assets/fnialPresentation-04.png)
+![Slide 5](assets/fnialPresentation-05.png)
+![Slide 6](assets/fnialPresentation-06.png)
+![Slide 7](assets/fnialPresentation-07.png)
+![Slide 8](assets/fnialPresentation-08.png)
+![Slide 9](assets/fnialPresentation-09.png)
+![Slide 10](assets/fnialPresentation-10.png)
+![Slide 11](asset/fnialPresentation-11.png)
 <!-- ![Slide 12](assets\fnialPresentation-12.png) -->
 
 
