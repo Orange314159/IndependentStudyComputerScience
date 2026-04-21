@@ -8,6 +8,11 @@
 \usepackage{physics}
 \usepackage{graphicx}
 \usepackage{circuitikz}
+\usepackage{media9}
+\usepackage{verbatim}
+\usepackage{multirow}
+\usepackage{ctable}
+\usepackage{geometry}
 
 \usetikzlibrary{positioning, angles, quotes}
 
@@ -106,8 +111,8 @@
 
 \vfill 
 
-\raggedleft
-{\tiny Source: Dr. David Root, \textit{IEEE Microwave Theory and Technology Society}}
+\raggedleft\
+{\tiny Source: Dr.\ David Root, \textit{IEEE Microwave Theory and Technology Society}}
 
 \end{frame}
 
@@ -138,7 +143,7 @@
 \begin{frame}
 \frametitle{Quantum Gates: The Ideal Physics World}
 \begin{block}{High-Level Definition}
-    A quantum gate is a unitary transformation applied to a qubit state. In a "perfect" physics world, these operations are:
+    A quantum gate is a unitary transformation applied to a qubit state. In a ``perfect'' physics world, these operations are:
 \end{block}
 \begin{itemize}
     \item \textbf{Deterministic:} Always performs the exact rotation intended.
@@ -173,7 +178,7 @@
 
 \vfill
 \begin{itemize}
-    \item \textbf{Left:} Gate errors create a ``wavey'' appearance.
+    \item \textbf{Left:} Gate errors create a ``wavy'' appearance.
     \item \textbf{Right:} Theoretical simulation in a perfect environment.
 \end{itemize}
 
@@ -239,7 +244,7 @@
 %%%% Slide 8 -- The Interface: CLI
 \begin{frame}[fragile]
 \frametitle{Command Line Interface (CLI)}
-In order to bridge the gap between the high level Qiskit simulations and low-level C phsysics simulation I developed a CLI to simulate perfect quantum gates.
+In order to bridge the gap between the high level Qiskit simulations and low-level C physics simulation I developed a CLI to simulate perfect quantum gates.
 \begin{exampleblock}{Sample Usage}
 \begin{verbatim}
 $ qit> create q1 10 
@@ -255,7 +260,7 @@ This also allows for easy integration with the C-based simulator, where we can d
 \begin{frame}
 \frametitle{Low-Level Simulation in C}
 
-Schrodinger Equation:
+Schrödinger's Equation:
 \[ i \frac{d}{dt} |\psi(t)\rangle = \hat{H}(t) |\psi(t)\rangle \]
 Single Qubit Hamiltonian:
 \[ \hat{H}_{k} = \frac{1}{2} \delta \hat{\sigma}_z + \frac{1}{2} \Omega ( \cos(\phi) \hat{\sigma}_x + \sin(\phi) \hat{\sigma}_y ) \]
@@ -273,7 +278,15 @@ Cross-Resonance Hamiltonian:
   \frametitle{Low-Level Simulation in C (Cont.)}
 
 \centering
-\includegraphics[height=0.85\textheight, width=\textwidth, keepaspectratio]{fourQubitSimulation.png}
+
+\includemedia[
+  width=0.8\linewidth,
+  height=0.6\paperheight,
+  activate=pageopen,
+  addresource=shortQubitPath.mp4,
+  flashvars={source=shortQubitPath.mp4&autoPlay=false&loop=false&controlBar=over}
+]{\includegraphics[width=0.8\linewidth, keepaspectratio]{logo.png}}{VPlayer.swf}
+
 \end{frame}
 
 %%%% Slide 10 -- Takeaways and Conclusions
@@ -281,7 +294,7 @@ Cross-Resonance Hamiltonian:
 \frametitle{Takeaways and Conclusions}
 
 \begin{itemize}
-    \item \textbf{Integration is Key:} Quantum computers won't replace clusters; they will act as specialized ``accelerators.''
+    \item \textbf{Integration is Key:} Quantum computers won't replace clusters; they will act as specialized ``accelerators''.
     
     \item \textbf{Hardware vs. Simulation:} Simulation is essential for debugging QEC algorithms before running on expensive hardware.
     \begin{itemize}

@@ -1,5 +1,5 @@
 \frametitle{Command Line Interface (CLI)}
-In order to bridge the gap between the high level Qiskit simulations and low-level C phsysics simulation I developed a CLI to simulate perfect quantum gates.
+In order to bridge the gap between the high level Qiskit simulations and low-level C physics simulation I developed a CLI to simulate perfect quantum gates.
 \begin{exampleblock}{Sample Usage}
 \begin{verbatim}
 $ qit> create q1 10
