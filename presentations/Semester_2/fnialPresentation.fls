@@ -1,6 +1,6 @@
-PWD c:\Users\mattr\Desktop\School\IndependentStudyComputerScience\presentations\Semester_2
+PWD c:\Users\mattr\Desktop\Home\Projects\IndependentStudyComputerScience\presentations\Semester_2
 INPUT C:\Users\mattr\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\mattr\Desktop\School\IndependentStudyComputerScience\presentations\Semester_2\fnialPresentation.tex
+INPUT c:\Users\mattr\Desktop\Home\Projects\IndependentStudyComputerScience\presentations\Semester_2\fnialPresentation.tex
 OUTPUT fnialPresentation.log
 INPUT C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
 INPUT C:\Users\mattr\AppData\Local\Programs\MiKTeX\tex\latex\beamer\beamer.cls
